@@ -16,7 +16,7 @@ timezone: Asia/Calcutta
 
 title: CYB3R_BO1 # the main title
 
-tagline: Boot Up, Break In, Being Stealthy # it will display as the subtitle
+tagline: Booting into the Future # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

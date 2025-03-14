@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-14T19:01:36+05:30</updated>
+  <updated>2025-03-14T20:45:08+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -20,27 +20,33 @@
 
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://localhost:4000/posts/hello_world/" rel="alternate" type="text/html" title="Hello World" />
+    <title>Welcome to My Blog 👋</title>
+    <link href="http://localhost:4000/posts/welcome/" rel="alternate" type="text/html" title="Welcome to My Blog 👋" />
     <published>2025-03-14T00:00:00+05:30</published>
   
     <updated>2025-03-14T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/posts/hello_world/</id>
-    <content type="text/html" src="http://localhost:4000/posts/hello_world/" />
+    <id>http://localhost:4000/posts/welcome/</id>
+    <content type="text/html" src="http://localhost:4000/posts/welcome/" />
     <author>
       <name>CYB3R BO1</name>
     </author>
 
   
     
-    <category term="documentation" />
+    <category term="Others" />
     
   
 
-  <summary>Thanks for Watching
+  <summary>Hello and welcome to my blog! 🚀
 
-Welcome to CYB3R BO1’s Blog, where cybersecurity meets creativity. Dive into a world of CTF writeups, exploit deep dives, hacking techniques, and cyberpunk-infused insights. Whether you’re a fellow hacker, an aspiring cybersecurity pro, or just someone fascinated by the digital underground, this blog is your gateway to breaking barriers, decoding challenges, and securing th...</summary>
+I’m passionate about cybersecurity, working on various projects, and participating in Capture The Flag (CTF) competitions. This blog is my space to share:
+
+🏆 CTF Writeups – Breaking down challenges, strategies, and solutions.
+
+🔐 Cybersecurity Insights – Topics, tools, and techniques that I find useful.
+
+🛠️ Projects – Showcasing my work in cybersecurity and relat...</summary>
 
   </entry>
 

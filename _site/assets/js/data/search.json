@@ -1,10 +1,10 @@
 [
   
   {
-    "title": "Hello World",
-    "url": "/posts/hello_world/",
-    "categories": "documentation",
-    "tags": "line, comment, subscribe",
+    "title": "Welcome to My Blog 👋",
+    "url": "/posts/welcome/",
+    "categories": "Others",
+    "tags": "welcome",
     "date": "2025-03-14 00:00:00 +0530",
     
 
@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "Thanks for WatchingWelcome to CYB3R BO1’s Blog, where cybersecurity meets creativity. Dive into a world of CTF writeups, exploit deep dives, hacking techniques, and cyberpunk-infused insights. Whet...",
-    "content": "Thanks for WatchingWelcome to CYB3R BO1’s Blog, where cybersecurity meets creativity. Dive into a world of CTF writeups, exploit deep dives, hacking techniques, and cyberpunk-infused insights. Whether you’re a fellow hacker, an aspiring cybersecurity pro, or just someone fascinated by the digital underground, this blog is your gateway to breaking barriers, decoding challenges, and securing the future.Heading 2bundle exec jekyll sHeading 3Peace Out!"
+    "snippet": "Hello and welcome to my blog! 🚀I’m passionate about cybersecurity, working on various projects, and participating in Capture The Flag (CTF) competitions. This blog is my space to share:🏆 CTF Writeu...",
+    "content": "Hello and welcome to my blog! 🚀I’m passionate about cybersecurity, working on various projects, and participating in Capture The Flag (CTF) competitions. This blog is my space to share:🏆 CTF Writeups – Breaking down challenges, strategies, and solutions.🔐 Cybersecurity Insights – Topics, tools, and techniques that I find useful.🛠️ Projects – Showcasing my work in cybersecurity and related fields.🏅 Achievements – Highlights of my journey in this exciting domainWhy This Blog?The cybersecurity world is vast, and learning never stops. By documenting my experiences, I hope to:✅ Help others understand and solve challenges.✅ Contribute to the cybersecurity community.✅ Track my own progress and growth.Stay tuned for upcoming posts, and feel free to connect or leave feedback! 🔥Cheers,CYB3R-BO1"
   }
   
 ]
