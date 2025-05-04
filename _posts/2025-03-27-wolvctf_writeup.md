@@ -18,7 +18,7 @@ WolvCTF 2025 is consists of challenges ranging from beginner to hard in difficul
 
 This is their CTF webpage - [https://wolvctf.io/](https://wolvctf.io/)
 
-This is their CTFtime profile - [https://ctftime.org/ctf/766/](ttps://ctftime.org/ctf/766/)
+This is their CTFtime profile - [https://ctftime.org/event/2579](https://ctftime.org/event/2579)
 
 ## **Misc**
 

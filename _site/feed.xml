@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://cyb3r-bo1.github.io//</id>
+  <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-27T21:56:32+05:30</updated>
+  <updated>2025-05-04T12:27:39+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
-    <uri>https://cyb3r-bo1.github.io//</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://cyb3r-bo1.github.io//feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://cyb3r-bo1.github.io//"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 CYB3R BO1 </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,40 @@
 
   
   <entry>
+    <title>TsukuCTF 2025 writeups</title>
+    <link href="http://localhost:4000/posts/tsukuctf_2025_writeup/" rel="alternate" type="text/html" title="TsukuCTF 2025 writeups" />
+    <published>2025-05-04T12:00:00+05:30</published>
+  
+    <updated>2025-05-04T12:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/tsukuctf_2025_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/tsukuctf_2025_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="TsukuCTF 2025" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>WolvCTF 2025 writeups</title>
-    <link href="https://cyb3r-bo1.github.io//posts/wolvctf_writeup/" rel="alternate" type="text/html" title="WolvCTF 2025 writeups" />
+    <link href="http://localhost:4000/posts/wolvctf_writeup/" rel="alternate" type="text/html" title="WolvCTF 2025 writeups" />
     <published>2025-03-27T21:45:00+05:30</published>
   
     <updated>2025-03-27T21:45:00+05:30</updated>
   
-    <id>https://cyb3r-bo1.github.io//posts/wolvctf_writeup/</id>
-    <content type="text/html" src="https://cyb3r-bo1.github.io//posts/wolvctf_writeup/" />
+    <id>http://localhost:4000/posts/wolvctf_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/wolvctf_writeup/" />
     <author>
       <name>CYB3R BO1</name>
     </author>
@@ -47,13 +73,13 @@
   
   <entry>
     <title>Welcome to My Blog 👋</title>
-    <link href="https://cyb3r-bo1.github.io//posts/welcome/" rel="alternate" type="text/html" title="Welcome to My Blog 👋" />
+    <link href="http://localhost:4000/posts/welcome/" rel="alternate" type="text/html" title="Welcome to My Blog 👋" />
     <published>2025-03-14T00:00:00+05:30</published>
   
     <updated>2025-03-14T00:00:00+05:30</updated>
   
-    <id>https://cyb3r-bo1.github.io//posts/welcome/</id>
-    <content type="text/html" src="https://cyb3r-bo1.github.io//posts/welcome/" />
+    <id>http://localhost:4000/posts/welcome/</id>
+    <content type="text/html" src="http://localhost:4000/posts/welcome/" />
     <author>
       <name>CYB3R BO1</name>
     </author>
