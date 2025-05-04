@@ -1,6 +1,6 @@
 ---
 title: TsukuCTF 2025 writeups
-date: 2025-05-04 12:00:00 +0530
+date: 2025-05-04 11:00:00 +0530
 categories: [CTF, TsukuCTF 2025]
 tags: [ctf, tsukuctf, writeups, cybersecurity, osint, pwn, cryptography]     # TAG names should always be lowercase
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.
