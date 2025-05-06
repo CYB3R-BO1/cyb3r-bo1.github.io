@@ -1,8 +1,8 @@
 ---
 title: WolvCTF 2025 writeups
 date: 2025-03-27 21:45:00 +0530
-categories: [CTF, WolvCTF 2025]
-tags: [ctf, wolvctf, writeups, cybersecurity, forensics, reverse-engineering, pwn, cryptography]     # TAG names should always be lowercase
+categories: [CTF, WolvCTF]
+tags: [ctf, writeups, cybersecurity, forensics, reverse-engineering, pwn, cryptography]     # TAG names should always be lowercase
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.
 ---
 
@@ -44,7 +44,7 @@ We got the flag!
 
 They have given us a netcat command to connect to a remote server and also a download - _dist.tar.gz_. As it is gzip compressed and tar compressed, lets decompress it using the below commands: 
 
-```sh
+```bash
 gzip -d dist.tar.gz
 tar -xvf dist.tar
 ```
@@ -56,7 +56,7 @@ tar -xvzf dist.tar.gz
 
 Now after extracting the compressed folder you will get this - _challenge/chall.py_. So what we are given is a python file. Let's inspect the source code.
 
-```python
+```python 
 import random
 
 def main():
@@ -106,8 +106,7 @@ They have given us a netcat command to connect to a remote server and also a dow
 
 After decompressing, we will be provided with three files - _0.js_, _wasm.js_ and _package.json_. I have provided the source code of each file below.
 
-*0.js ------->*
-```js
+```js 
 const readline = require("readline");
 const rl = readline.createInterface({
     input: process.stdin,
@@ -144,10 +143,10 @@ rl.question(">>> ", (answer) => {
     process.exit(0);
 });
 ```
+{: file='0.js'}
 
-*wasm.js ------->*
 
-```js
+```js 
 let isEven = require('is-even');
 
 function leb128(n) {
@@ -189,10 +188,9 @@ function parseHex(answer) {
 
 module.exports = { Builder, parseHex }
 ```
+{: file='wasm.js'}
 
-*package.json ------->*
-
-```js
+```js 
 {
   "name": "wasmjail",
   "version": "1.0.0",
@@ -207,6 +205,7 @@ module.exports = { Builder, parseHex }
   }
 }
 ```
+{: file='package.json'}
 
 Explanation of source code: 
 
@@ -249,7 +248,7 @@ After decompressing, we will get a ELF 64-bit file - _reverse_ and a text file -
 After analyzing the decompiled code of the binary, I got to know that it is a code to mix the contents of _flag.txt_, and the out.txt contains the output. So we have to reverse the output to get the input.  
 I have written a python code to reverse the process.
 
-```python
+```python 
 def unmix_flag(mixed_flag):
     original_flag = ''.join(chr(ord(c) + 3) for c in mixed_flag)
     
@@ -332,19 +331,19 @@ We got the flag!
 
 This is the string in the given file - _message.txt_.
 
-```plaintext
+```text
 tzc3Sq{k!ss!a!__FZ!!_!11}
 ```
 
 As it mentioned caesar cipher, I tried decoding it and at shift value 3, I got this:
 
-```plaintext
+```text
 wcf3Vt{n!vv!d!__IC!!_!11} 
 ```
 
 Though it looks like a flag, it isn't from the hints we can know that to get the flag we have to arrange it in square. As the length is 25, let's try to arrange it in 5x5 square.
 
-```plaintext
+```text
 w c f 3 V
 t { n ! v
 v ! d ! _
@@ -354,7 +353,7 @@ _ ! 1 1 }
 
 After spending some time to find the pattern for the flag, I got the pattern it is
 
-```plaintext
+```text
 1   2   4   7   11
 3   5   8   12  16
 6   9   13  17  18
@@ -425,7 +424,7 @@ They have given us a netcat command and a compressed folder - _dist.tar.gz_, rea
 
 After decompressing, we will get a ELF 64-bit file - _chal_ and a C-programmed file - _main.c_. After analysing the C-programmed source code I understood that it is vulnerable to buffer overflow, so I created a python script to exploit the remote server, here is the python code: 
 
-```python
+```python 
 from pwn import *
 
 p = remote("p0wn3d.kctf-453514-codelab.kctf.cloud", 1337)

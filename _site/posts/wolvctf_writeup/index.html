@@ -34,8 +34,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025." />
 <meta property="og:description" content="This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025." />
-<link rel="canonical" href="http://localhost:4000/posts/wolvctf_writeup/" />
-<meta property="og:url" content="http://localhost:4000/posts/wolvctf_writeup/" />
+<link rel="canonical" href="https://cyb3r-bo1.github.io//posts/wolvctf_writeup/" />
+<meta property="og:url" content="https://cyb3r-bo1.github.io//posts/wolvctf_writeup/" />
 <meta property="og:site_name" content="CYB3R_BO1" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-03-27T21:45:00+05:30" />
@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="WolvCTF 2025 writeups" />
 <meta name="twitter:site" content="@cyb3r_bo1" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-04T12:28:51+05:30","datePublished":"2025-03-27T21:45:00+05:30","description":"This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.","headline":"WolvCTF 2025 writeups","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/wolvctf_writeup/"},"url":"http://localhost:4000/posts/wolvctf_writeup/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-04T12:28:51+05:30","datePublished":"2025-03-27T21:45:00+05:30","description":"This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.","headline":"WolvCTF 2025 writeups","mainEntityOfPage":{"@type":"WebPage","@id":"https://cyb3r-bo1.github.io//posts/wolvctf_writeup/"},"url":"https://cyb3r-bo1.github.io//posts/wolvctf_writeup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1848,7 +1848,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="3134 words"
+  title="3128 words"
 >
   <em>17 min</em> read</span>
 
@@ -1920,7 +1920,7 @@
 
 <p>They have given us a netcat command to connect to a remote server and also a download - <em>dist.tar.gz</em>. As it is gzip compressed and tar compressed, lets decompress it using the below commands:</p>
 
-<div class="language-sh highlighter-rouge"><div class="code-header">
+<div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -2011,9 +2011,8 @@
 
 <p>After decompressing, we will be provided with three files - <em>0.js</em>, <em>wasm.js</em> and <em>package.json</em>. I have provided the source code of each file below.</p>
 
-<p><em>0.js ——-&gt;</em></p>
-<div class="language-js highlighter-rouge"><div class="code-header">
-        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+<div file="0.js" class="language-js highlighter-rouge"><div class="code-header">
+        <span data-label-text="0.js"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2086,10 +2085,8 @@
 <span class="p">});</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><em>wasm.js ——-&gt;</em></p>
-
-<div class="language-js highlighter-rouge"><div class="code-header">
-        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+<div file="wasm.js" class="language-js highlighter-rouge"><div class="code-header">
+        <span data-label-text="wasm.js"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2172,10 +2169,8 @@
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">Builder</span><span class="p">,</span> <span class="nx">parseHex</span> <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><em>package.json ——-&gt;</em></p>
-
-<div class="language-js highlighter-rouge"><div class="code-header">
-        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+<div file="package.json" class="language-js highlighter-rouge"><div class="code-header">
+        <span data-label-text="package.json"><i class="far fa-file-code fa-fw"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2357,24 +2352,24 @@ So as I didn’t know how many times I keep on running the below command to get 
 
 <p>This is the string in the given file - <em>message.txt</em>.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>tzc3Sq{k!ss!a!__FZ!!_!11}
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>As it mentioned caesar cipher, I tried decoding it and at shift value 3, I got this:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>wcf3Vt{n!vv!d!__IC!!_!11} 
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Though it looks like a flag, it isn’t from the hints we can know that to get the flag we have to arrange it in square. As the length is 25, let’s try to arrange it in 5x5 square.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2389,8 +2384,8 @@ _ ! 1 1 }
 
 <p>After spending some time to find the pattern for the flag, I got the pattern it is</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -2706,7 +2701,7 @@ _ ! 1 1 }
         <i class="far fa-folder-open fa-fw me-1"></i>
         
           <a href="/categories/ctf/">CTF</a>,
-          <a href="/categories/wolvctf-2025/">WolvCTF 2025</a>
+          <a href="/categories/wolvctf/">WolvCTF</a>
       </div>
     
 
@@ -2719,11 +2714,6 @@ _ ! 1 1 }
             href="/tags/ctf/"
             class="post-tag no-text-decoration"
           >ctf</a>
-        
-          <a
-            href="/tags/wolvctf/"
-            class="post-tag no-text-decoration"
-          >wolvctf</a>
         
           <a
             href="/tags/writeups/"
@@ -2789,21 +2779,21 @@ _ ! 1 1 }
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=WolvCTF%202025%20writeups%20-%20CYB3R_BO1&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwolvctf_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=WolvCTF%202025%20writeups%20-%20CYB3R_BO1&url=https%3A%2F%2Fcyb3r-bo1.github.io%2F%2Fposts%2Fwolvctf_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=WolvCTF%202025%20writeups%20-%20CYB3R_BO1&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwolvctf_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=WolvCTF%202025%20writeups%20-%20CYB3R_BO1&u=https%3A%2F%2Fcyb3r-bo1.github.io%2F%2Fposts%2Fwolvctf_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwolvctf_writeup%2F&text=WolvCTF%202025%20writeups%20-%20CYB3R_BO1" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fcyb3r-bo1.github.io%2F%2Fposts%2Fwolvctf_writeup%2F&text=WolvCTF%202025%20writeups%20-%20CYB3R_BO1" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2858,14 +2848,14 @@ _ ! 1 1 }
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/wolvctf_writeup/">WolvCTF 2025 writeups</a>
+          <a href="/posts/tsukuctf_2025_writeup/">TsukuCTF 2025 writeups</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/tsukuctf_2025_writeup/">TsukuCTF 2025 writeups</a>
+          <a href="/posts/wolvctf_writeup/">WolvCTF 2025 writeups</a>
         </li>
       
         
@@ -3037,16 +3027,6 @@ _ ! 1 1 }
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -3182,63 +3162,6 @@ _ ! 1 1 }
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3285,9 +3208,6 @@ _ ! 1 1 }
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/tsukuctf/">tsukuctf</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/welcome/">welcome</a>
@@ -3642,16 +3562,6 @@ _ ! 1 1 }
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -3787,63 +3697,6 @@ _ ! 1 1 }
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3890,9 +3743,6 @@ _ ! 1 1 }
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/tsukuctf/">tsukuctf</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/welcome/">welcome</a>
@@ -3950,62 +3800,6 @@ _ ! 1 1 }
     
       
       <!-- The comments switcher -->
-
-  
-  <!-- https://giscus.app/ -->
-<script>
-  (function () {
-    const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
-    const initTheme = themeMapper[Theme.visualState];
-
-    let lang = 'en';if (lang.length > 2 && !lang.startsWith('zh')) {
-      lang = lang.slice(0, 2);
-    }
-
-    let giscusAttributes = {
-      src: 'https://giscus.app/client.js',
-      'data-repo': 'UdayCherri/blog-comments',
-      'data-repo-id': 'R_kgDOOOhmzQ',
-      'data-category': 'General',
-      'data-category-id': 'DIC_kwDOOOhmzc4Coclh',
-      'data-mapping': 'pathname',
-      'data-strict' : '0',
-      'data-reactions-enabled': '1',
-      'data-emit-metadata': '0',
-      'data-theme': initTheme,
-      'data-input-position': 'bottom',
-      'data-lang': lang,
-      'data-loading': 'lazy',
-      crossorigin: 'anonymous',
-      async: ''
-    };
-
-    let giscusNode = document.createElement('script');
-    Object.entries(giscusAttributes).forEach(([key, value]) =>
-      giscusNode.setAttribute(key, value)
-    );
-
-    const $footer = document.querySelector('footer');
-    $footer.insertAdjacentElement("beforebegin", giscusNode);
-
-    addEventListener('message', (event) => {
-      if (event.source === window && event.data && event.data.id === Theme.ID) {
-        const newTheme = themeMapper[Theme.visualState];
-
-        const message = {
-          setConfig: {
-            theme: newTheme
-          }
-        };
-
-        const giscus =
-          document.getElementsByClassName('giscus-frame')[0].contentWindow;
-        giscus.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-    });
-  })();
-</script>
-
 
 
     
