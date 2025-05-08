@@ -8,6 +8,8 @@ description: This post consists of writeups of the challenges CYB3R_BO1 had solv
 
 # **TsukuCTF 2025**
 
+![tsukuCTF](/assets/img/posts/tsukuCTF2025/tsukuCTF.png)
+
 ## **About TsukuCTF:** 
 
 TsukuCTF is an annual CTF hosted by TaruTaru
