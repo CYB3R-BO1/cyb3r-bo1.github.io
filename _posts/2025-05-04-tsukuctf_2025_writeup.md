@@ -102,7 +102,7 @@ _Footprints that walk far away and disappear into the evening darkness, The glit
 
 _The flag format is TsukuCTF25{latitude_longitude} of the location where this person is standing. However, the latitude and longitude are rounded down to the fifth decimal place._
 
-_View Hint: This poem has no meaning.__
+_View Hint: This poem has no meaning._
 
 **Source:**
 

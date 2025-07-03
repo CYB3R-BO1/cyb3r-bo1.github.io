@@ -1,5 +1,5 @@
 ---
-title: picoGym Forensics-Easy writeups
+title: picoGym Forensics - Easy writeups
 date: 2025-05-08 11:00:00 +0530
 categories: [CTF, PicoCTF]
 tags: [ctf, writeups, cybersecurity, forensics, steganography]     # TAG names should always be lowercase
@@ -26,11 +26,78 @@ This is their url for picoGym - [https://play.picoctf.org/practice](https://play
 
 ## **Easy**
 
+### **DISKO 1**
+
+![Disko1](/assets/img/posts/picoGym-Forensics/Disko1.png)
+
+**Explanation:**
+
+We are given with a disk image named - _disko-1.dd.gz_, it looks like it compressed using gzip so I decompressed it using the below command.
+
+```bash
+gzip -d disko-1.dd.gz
+```
+
+It returned _disko-1.dd_ which is a - DOS/MBR boot sector, code offset 0x58+2, OEM-ID "mkfs.fat", Media descriptor 0xf8, sectors/track 32, heads 8, sectors 102400 (volumes > 32 MB), FAT (32 bit), sectors/FAT 788, serial number 0x241a4420, unlabeled (by file command).
+
+I used exiftool but couldn't find anything helpful. So I thought of using strings with grep to find the flag. I used the below command.
+
+```bash
+strings disko-1.dd | grep "picoCTF"
+```
+
+I got the flag!
+
+**Flag:** `picoCTF{1t5_ju5t_4_5tr1n9_e3408eef}`
+
+### **RED**
+
+![RED](/assets/img/posts/picoGym-Forensics/RED.png)
+
+**Explanation:**
+
+We are given an image - red.png, which when opened is full of red color. I tried using exiftool and strings, but no progress. So I used zsteg thinking something maybe hidden using steganography. 
+
+![RED-zsteg](/assets/img/posts/picoGym-Forensics/RED-zsteg.png)
+
+we can see some base64 text, which is the same string repeated three times continuously. So lets decode it using the below command.
+
+```bash
+echo "cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==" | base64 -d
+```
+
+I got the flag!
+
+**Flag:** `picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}`
+
+### **Ph4nt0m 1ntrud3r**
+
+![Ph4nt0m 1ntrud3r](/assets/img/posts/picoGym-Forensics/Ph4nt0m%201ntrud3r.png)
+
+**Explanation:**
+
+They have given us a pcap file. When opened the pcap file I saw base64 strings in the TCP segment data of each log. They are in all the logs, but what I found is not all of them are base64. When filtered the time in ascending order, we can find legit base64 strings at the last logs. Now by collecting them we got:
+
+```plaintext
+cGljb0NURg==
+ezF0X3c0cw==
+bnRfdGg0dA==
+XzM0c3lfdA==
+YmhfNHJfMw==
+NmY0YTY2Ng==
+fQ==
+```
+which when decoded using base64, gives us the flag.
+
+I got the flag!
+
+**Flag:** `picoCTF{1t_w4snt_th4t_34sy_tbh_4r_36f4a666}`
+
 ### **Verify**
 
 ![Verify](/assets/img/posts/picoGym-Forensics/Verify.png)
 
-**Explanataion:**
+**Explanation:**
 
 After launcing the instance, we will be provided with a custom-port SSH login command and a password. Let's try to connect to the shell using the given command and enter the password. You will be connected to the shell.
 
@@ -99,51 +166,6 @@ This challenge can also be solved using mobile QR code scanner and other online 
 
 **Flag:** `picoCTF{p33k_@_b00_d4ca652e}`
 
-### **Glory of the Garden**
-
-![Glory of the Garden](/assets/img/posts/picoGym-Forensics/Glory%20of%20the%20Garden.png)
-
-**Explanation:**
-
-You can see the "garden" text in the description is colored blue, so a link must be attached to it. Aftering clicking on it, an image named - garden.jpg will be downloaded.
-
-![garden.jpg](/assets/img/posts/picoGym-Forensics/garden.jpg)
-
-After analysing the image using - file, exiftool and binwalk commands I couldn't find anything. But after using the strings command on the jpg, it returned the flag in the last line.
-
-```bash
-strings garden.jpg
-```
-
-I got the flag!
-
-**Flag:** `picoCTF{more_than_m33ts_the_3y33dd2eEF5}`
-
-### **Information**
-
-![Information](/assets/img/posts/picoGym-Forensics/Information.png)
-
-**Explanantion:**
-
-So they have given us a file - cat.jpg saying files can be changed in a secret way.
-
-After using file, binwalk, strings and xxd commands I couldn't find anything suspective but when I used exiftool command the got this output:
-
-```bash
-exiftool cat.jpg
-```
-![Information-exiftool](/assets/img/posts/picoGym-Forensics/Information-exiftool.png)
-
-Now looking at the value of the license, it looks sus, I think its base64 or something. Let's try the below command.
-
-```bash
-echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d
-```
-
-I got the flag!
-
-**Flag:** `picoCTF{the_m3tadata_1s_modified}`
-
 ### **Secret of the Polyglot**
 
 ![Secret of the Polyglot](/assets/img/posts/picoGym-Forensics/Secret%20of%20the%20Polyglot.png)
@@ -192,45 +214,50 @@ I got the flag!
 
 **Flag:** `picoCTF{ME74D47A_HIDD3N_deca06fb}`
 
-### **RED**
+### **Information**
 
-![RED](/assets/img/posts/picoGym-Forensics/RED.png)
+![Information](/assets/img/posts/picoGym-Forensics/Information.png)
 
-**Explanation:**
+**Explanantion:**
 
-We are given an image - red.png, which when opened is full of red color. I tried using exiftool and strings, but no progress. So I used zsteg thinking something maybe hidden using steganography. 
+So they have given us a file - cat.jpg saying files can be changed in a secret way.
 
-![RED-zsteg](/assets/img/posts/picoGym-Forensics/RED-zsteg.png)
-
-we can see some base64 text, which is the same string repeated three times continuously. So lets decode it using the below command.
+After using file, binwalk, strings and xxd commands I couldn't find anything suspective but when I used exiftool command the got this output:
 
 ```bash
-echo "cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==" | base64 -d
+exiftool cat.jpg
+```
+![Information-exiftool](/assets/img/posts/picoGym-Forensics/Information-exiftool.png)
+
+Now looking at the value of the license, it looks sus, I think its base64 or something. Let's try the below command.
+
+```bash
+echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d
 ```
 
 I got the flag!
 
-**Flag:** `picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}`
+**Flag:** `picoCTF{the_m3tadata_1s_modified}`
 
-### **Ph4nt0m 1ntrud3r**
+### **Glory of the Garden**
 
-![Ph4nt0m 1ntrud3r](/assets/img/posts/picoGym-Forensics/Ph4nt0m%201ntrud3r.png)
+![Glory of the Garden](/assets/img/posts/picoGym-Forensics/Glory%20of%20the%20Garden.png)
 
 **Explanation:**
 
-They have given us a pcap file. When opened the pcap file I saw base64 strings in the TCP segment data of each log. They are in all the logs, but what I found is not all of them are base64. When filtered the time in ascending order, we can find legit base64 strings at the last logs. Now by collecting them we got:
+You can see the "garden" text in the description is colored blue, so a link must be attached to it. Aftering clicking on it, an image named - garden.jpg will be downloaded.
 
-```plaintext
-cGljb0NURg==
-ezF0X3c0cw==
-bnRfdGg0dA==
-XzM0c3lfdA==
-YmhfNHJfMw==
-NmY0YTY2Ng==
-fQ==
+![garden.jpg](/assets/img/posts/picoGym-Forensics/garden.jpg)
+
+After analysing the image using - file, exiftool and binwalk commands I couldn't find anything. But after using the strings command on the jpg, it returned the flag in the last line.
+
+```bash
+strings garden.jpg
 ```
-which when decoded using base64, gives us the flag.
 
 I got the flag!
 
-**Flag:** `picoCTF{1t_w4snt_th4t_34sy_tbh_4r_36f4a666}`
+**Flag:** `picoCTF{more_than_m33ts_the_3y33dd2eEF5}`
+
+
+
