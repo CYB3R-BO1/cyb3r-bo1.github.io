@@ -8,7 +8,7 @@ excerpt: "A writeup for ImaginaryCTF 2025 challenges."
 
 # ImaginaryCTF 2025 Writeup
 
-![ImaginaryCTF 2025](/assets/img/posts/imaginaryCTF/imaginaryCTF.png)
+![ImaginaryCTF-2025](/assets/img/posts/imaginaryCTF/imaginaryCTF.png)
 
 ## Introduction
 
