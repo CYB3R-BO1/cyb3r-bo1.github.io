@@ -6,11 +6,11 @@ tags: [ctf, writeups, cybersecurity, pwn, reverse-engineering]
 excerpt: "A writeup for ImaginaryCTF 2025 challenges."
 ---
 
-# ImaginaryCTF 2025 Writeup
+# **ImaginaryCTF 2025 Writeup**
 
 ![ImaginaryCTF-2025](/assets/img/posts/imaginaryCTF/imaginaryCTF.png)
 
-## Introduction
+## **Introduction**
 
 Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under the handle LUZ1LF3R, we competed in ImaginaryCTF 2025, securing the 215th position.
 
@@ -18,7 +18,7 @@ I focused on Reverse Engineering and Pwn challenges. Since I’m still new to th
 
 Here are my writeups for the challenges I worked on, a record of both my learning and growth.
 
-## No. 1: sanity-check
+## **No. 1: sanity-check**
 
 **Type:** Misc  
 **Level:** 1/3  
@@ -45,7 +45,7 @@ Flag successfully submitted.
 **Flag:**  
 `ictf{this_ctf_might_make_you_insane}`
 
-## No. 2: discord
+## **No. 2: discord**
 
 **Type:** Misc  
 **Level:** 1/3  
@@ -74,7 +74,7 @@ Flag successfully found in the specified channel message.
 **Flag:**  
 `ictf{yeet}`
 
-## No. 3: survey
+## **No. 3: survey**
 
 **Type:** Misc  
 **Level:** 1/3  
@@ -103,7 +103,7 @@ Flag successfully retrieved from the CyberChef output.
 `ictf{thanks_for_playing_imaginaryctf_2025!}`
 
 
-## No. 4: tax-return
+## **No. 4: tax-return**
 
 **Type:** Misc  
 **Level:** 1/3  
@@ -141,7 +141,7 @@ Successfully tricked the AI to reveal the flag.
 **Flag:**
 `ictf{h0w_d1d_y0u_tr1ck_my_a1_@ss1st@nt?}`
 
-## No. 5: weird-app
+## **No. 5: weird-app**
 
 **Type:** Reversing  
 **Level:** 4/10  
@@ -228,7 +228,7 @@ Successfully reversed the transformation logic and retrieved the original flag.
 **Flag:**  
 `ictf{1_l0v3_@ndr0id_stud103}`
 
-## No. 6: comparing
+## **No. 6: comparing**
 
 **Type:** Reversing  
 **Level:** 4/10  
@@ -362,7 +362,7 @@ The reverse script successfully retrieved the flag from the encoded output.
 **Flag:**  
 `ictf{cu3st0m_c0mp@r@t0rs_1e8f9e}`
 
-## No. 7: babybof
+## **No. 7: babybof**
 
 **Type:** Pwn  
 **Level:** 1/3  
@@ -508,7 +508,7 @@ Successfully exploited the binary and the remote server using buffer overflow.
 **Flag:**
 `ictf{arent_challenges_written_two_hours_before_ctf_amazing}`
 
-## No. 8: nimrod
+## **No. 8: nimrod**
 
 **Type:** Reversing   
 **Level:** 1/3  
@@ -536,7 +536,7 @@ Flag successfully decrypted from the binary
 **Flag:**  
 `ictf{a_mighty_hunter_bfc16cce9dc8}`
 
-## No. 9: stacked
+## **No. 9: stacked**
 
 **Type:** Reversing  
 **Level:** 3/3  
