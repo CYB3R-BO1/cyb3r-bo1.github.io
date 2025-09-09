@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-07-03T14:15:20+05:30</updated>
+  <updated>2025-08-12T17:19:26+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,108 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>picoGym Reverse Engineering - Medium writeups</title>
+    <link href="http://localhost:4000/posts/picogym_rev_medium_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Medium writeups" />
+    <published>2025-07-25T11:00:00+05:30</published>
+  
+    <updated>2025-07-25T11:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/picogym_rev_medium_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_medium_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PicoCTF" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Autopsy - Tutorial for N00bs</title>
+    <link href="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" rel="alternate" type="text/html" title="Autopsy - Tutorial for N00bs" />
+    <published>2025-07-23T12:30:00+05:30</published>
+  
+    <updated>2025-07-23T12:50:21+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Autopsy-tutorial-for-beginners/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+  
+
+  <summary>This post consists of an article &amp;quot;Autopsy - Tutorial for N00bs&amp;quot;</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>picoGym Reverse Engineering - Hard writeups</title>
+    <link href="http://localhost:4000/posts/picogym_rev_hard_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Hard writeups" />
+    <published>2025-07-03T11:00:00+05:30</published>
+  
+    <updated>2025-07-03T11:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/picogym_rev_hard_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_hard_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PicoCTF" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>picoGym Reverse Engineering - Easy writeups</title>
+    <link href="http://localhost:4000/posts/picogym_rev_easy_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Easy writeups" />
+    <published>2025-05-24T19:00:00+05:30</published>
+  
+    <updated>2025-05-24T19:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/picogym_rev_easy_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_easy_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="PicoCTF" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
+
+  </entry>
 
   
   <entry>
@@ -41,90 +143,6 @@
   
 
   <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>TsukuCTF 2025 writeups</title>
-    <link href="http://localhost:4000/posts/tsukuctf_2025_writeup/" rel="alternate" type="text/html" title="TsukuCTF 2025 writeups" />
-    <published>2025-05-04T11:00:00+05:30</published>
-  
-    <updated>2025-07-03T14:02:40+05:30</updated>
-  
-    <id>http://localhost:4000/posts/tsukuctf_2025_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/tsukuctf_2025_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="TsukuCTF" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>WolvCTF 2025 writeups</title>
-    <link href="http://localhost:4000/posts/wolvctf_2025_writeup/" rel="alternate" type="text/html" title="WolvCTF 2025 writeups" />
-    <published>2025-03-27T21:45:00+05:30</published>
-  
-    <updated>2025-03-27T21:45:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/wolvctf_2025_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/wolvctf_2025_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="WolvCTF" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Welcome to My Blog 👋</title>
-    <link href="http://localhost:4000/posts/welcome/" rel="alternate" type="text/html" title="Welcome to My Blog 👋" />
-    <published>2025-03-14T00:00:00+05:30</published>
-  
-    <updated>2025-03-14T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/welcome/</id>
-    <content type="text/html" src="http://localhost:4000/posts/welcome/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="Others" />
-    
-  
-
-  <summary>Hello and welcome to my blog! 🚀
-
-I’m passionate about cybersecurity, working on various projects, and participating in Capture The Flag (CTF) competitions. This blog is my space to share:
-
-🏆 CTF Writeups – Breaking down challenges, strategies, and solutions.
-
-🔐 Cybersecurity Insights – Topics, tools, and techniques that I find useful.
-
-🛠️ Projects – Showcasing my work in cybersecurity and relat...</summary>
 
   </entry>
 
