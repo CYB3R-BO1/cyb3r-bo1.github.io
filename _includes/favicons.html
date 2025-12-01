@@ -1,46 +1,77 @@
 <!-- Custom Favicons Override -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/posts/favicons/apple-touch-icon.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/posts/favicons/favicon-32x32.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/posts/favicons/favicon-16x16.png' | relative_url }}">
-<link rel="shortcut icon" href="{{ '/assets/img/posts/favicons/favicon.ico' | relative_url }}">
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ '/assets/img/posts/favicons/apple-touch-icon.png' | relative_url }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="{{ '/assets/img/posts/favicons/favicon-32x32.png' | relative_url }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ '/assets/img/posts/favicons/favicon-16x16.png' | relative_url }}"
+/>
+<link
+  rel="shortcut icon"
+  href="{{ '/assets/img/posts/favicons/favicon.ico' | relative_url }}"
+/>
 <!-- Optional: if you later add these files to the same folder uncomment below -->
 {%- comment -%}
-<link rel="manifest" href="{{ '/assets/img/posts/favicons/site.webmanifest' | relative_url }}">
-<meta name="msapplication-config" content="{{ '/assets/img/posts/favicons/browserconfig.xml' | relative_url }}">
+<link
+  rel="manifest"
+  href="{{ '/assets/img/posts/favicons/site.webmanifest' | relative_url }}"
+/>
+<meta
+  name="msapplication-config"
+  content="{{ '/assets/img/posts/favicons/browserconfig.xml' | relative_url }}"
+/>
 {%- endcomment -%}
-<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-<meta name="application-name" content="{{ site.title }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+<meta name="application-name" content="{{ site.title }}" />
 
 <!-- Runtime circular favicon conversion: crops the square PNG to a circle -->
 <script>
-	(function() {
-		var link = document.querySelector('link[rel="icon"][sizes="32x32"]') || document.querySelector('link[rel="icon"]');
-		if (!link) return;
-		var src = link.getAttribute('href');
-		if (!src) return;
-		var img = new Image();
-		img.crossOrigin = 'anonymous';
-		img.src = src;
-		img.onload = function() {
-			var size = 64; // generate a reasonably sharp data URL
-			var canvas = document.createElement('canvas');
-			canvas.width = size;
-			canvas.height = size;
-			var ctx = canvas.getContext('2d');
-			ctx.beginPath();
-			ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
-			ctx.closePath();
-			ctx.clip();
-			// Draw source image scaled to canvas
-			ctx.drawImage(img, 0, 0, size, size);
-			try {
-				var dataURL = canvas.toDataURL('image/png');
-				// Replace existing favicon links with circular version
-				var iconLinks = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
-				iconLinks.forEach(function(l) { l.href = dataURL; });
-			} catch(e) { /* silently ignore */ }
-		};
-	})();
+  (function () {
+    var link =
+      document.querySelector('link[rel="icon"][sizes="32x32"]') ||
+      document.querySelector('link[rel="icon"]');
+    if (!link) return;
+    var src = link.getAttribute("href");
+    if (!src) return;
+    var img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = src;
+    img.onload = function () {
+      var size = 64; // generate a reasonably sharp data URL
+      var canvas = document.createElement("canvas");
+      canvas.width = size;
+      canvas.height = size;
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.clip();
+      // Draw source image scaled to canvas
+      ctx.drawImage(img, 0, 0, size, size);
+      try {
+        var dataURL = canvas.toDataURL("image/png");
+        // Replace existing favicon links with circular version
+        var iconLinks = document.querySelectorAll(
+          'link[rel="icon"], link[rel="shortcut icon"]'
+        );
+        iconLinks.forEach(function (l) {
+          l.href = dataURL;
+        });
+      } catch (e) {
+        /* silently ignore */
+      }
+    };
+  })();
 </script>
 
 <!-- To permanently make it round, replace image files with transparent PNGs already cropped to a circle.
