@@ -1,14 +1,16 @@
 ---
-title: "TryHackMe Advent of Cyber 2025"
+title: "TryHackMe Advent of Cyber 2025 - 1"
 date: 2025-12-01 23:00:00 +0530
 categories: [WalkThrough, THM, AoC2025]
 tags: [walkthrough, cybersecurity, tryhackme, aoc]
 excerpt: "A walkthrough of THM's Advent of Cyber 2025"
 ---
 
-# TryHackMe Advent of Cyber 2025 - 1
+![Advent of Cyber](/assets/img/posts/THM/AoC2025.png)
 
-> Linux CLI - Shells Bells: TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
+#  Linux CLI - Shells Bells
+
+>TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
 
 ## Task 1: Introduction
 
