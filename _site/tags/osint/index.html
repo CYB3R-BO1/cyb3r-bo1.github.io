@@ -59,43 +59,68 @@
   </title>
 
   <!-- Custom Favicons Override -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/posts/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/posts/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/posts/favicons/favicon-16x16.png">
-<link rel="shortcut icon" href="/assets/img/posts/favicons/favicon.ico">
-<!-- Optional: if you later add these files to the same folder uncomment below --><meta name="apple-mobile-web-app-title" content="CYB3R_BO1">
-<meta name="application-name" content="CYB3R_BO1">
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/img/posts/favicons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/img/posts/favicons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/img/posts/favicons/favicon-16x16.png"
+/>
+<link
+  rel="shortcut icon"
+  href="/assets/img/posts/favicons/favicon.ico"
+/>
+<!-- Optional: if you later add these files to the same folder uncomment below --><meta name="apple-mobile-web-app-title" content="CYB3R_BO1" />
+<meta name="application-name" content="CYB3R_BO1" />
 
 <!-- Runtime circular favicon conversion: crops the square PNG to a circle -->
 <script>
-	(function() {
-		var link = document.querySelector('link[rel="icon"][sizes="32x32"]') || document.querySelector('link[rel="icon"]');
-		if (!link) return;
-		var src = link.getAttribute('href');
-		if (!src) return;
-		var img = new Image();
-		img.crossOrigin = 'anonymous';
-		img.src = src;
-		img.onload = function() {
-			var size = 64; // generate a reasonably sharp data URL
-			var canvas = document.createElement('canvas');
-			canvas.width = size;
-			canvas.height = size;
-			var ctx = canvas.getContext('2d');
-			ctx.beginPath();
-			ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
-			ctx.closePath();
-			ctx.clip();
-			// Draw source image scaled to canvas
-			ctx.drawImage(img, 0, 0, size, size);
-			try {
-				var dataURL = canvas.toDataURL('image/png');
-				// Replace existing favicon links with circular version
-				var iconLinks = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
-				iconLinks.forEach(function(l) { l.href = dataURL; });
-			} catch(e) { /* silently ignore */ }
-		};
-	})();
+  (function () {
+    var link =
+      document.querySelector('link[rel="icon"][sizes="32x32"]') ||
+      document.querySelector('link[rel="icon"]');
+    if (!link) return;
+    var src = link.getAttribute("href");
+    if (!src) return;
+    var img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = src;
+    img.onload = function () {
+      var size = 64; // generate a reasonably sharp data URL
+      var canvas = document.createElement("canvas");
+      canvas.width = size;
+      canvas.height = size;
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.clip();
+      // Draw source image scaled to canvas
+      ctx.drawImage(img, 0, 0, size, size);
+      try {
+        var dataURL = canvas.toDataURL("image/png");
+        // Replace existing favicon links with circular version
+        var iconLinks = document.querySelectorAll(
+          'link[rel="icon"], link[rel="shortcut icon"]'
+        );
+        iconLinks.forEach(function (l) {
+          l.href = dataURL;
+        });
+      } catch (e) {
+        /* silently ignore */
+      }
+    };
+  })();
 </script>
 
 <!-- To permanently make it round, replace image files with transparent PNGs already cropped to a circle.
@@ -560,14 +585,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/imaginaryctf_2025_writeup/">ImaginaryCTF 2025 Writeup</a>
+          <a href="/posts/AoC_2025_walkthrough/">TryHackMe Advent of Cyber 2025 - 1</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Autopsy-tutorial-for-beginners/">Autopsy - Tutorial</a>
+          <a href="/posts/welcome/">Welcome to My Blog 👋</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/wolvctf_2025_writeup/">WolvCTF 2025 writeups</a>
         </li>
       
         
@@ -581,14 +613,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/picogym_forensics_easy_writeup/">picoGym Forensics - Easy writeups</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/wolvctf_2025_writeup/">WolvCTF 2025 writeups</a>
+          <a href="/posts/Autopsy-tutorial-for-beginners/">Autopsy - Tutorial</a>
         </li>
       
     </ul>
@@ -627,15 +652,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -645,43 +661,6 @@
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -716,35 +695,6 @@
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -757,25 +707,15 @@
     
     
     
-      
-        
-        
-
   
     
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
@@ -877,6 +817,15 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
   
     
     
@@ -896,6 +845,104 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -922,13 +969,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -967,13 +1007,13 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/welcome/">welcome</a>
       
     </div>
   </section>
@@ -1065,15 +1105,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1083,43 +1114,6 @@
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1154,35 +1148,6 @@
     
     
     
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
     
   
@@ -1195,25 +1160,15 @@
     
     
     
-      
-        
-        
-
   
     
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
@@ -1315,6 +1270,15 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
   
     
     
@@ -1334,6 +1298,104 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1360,13 +1422,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1405,13 +1460,13 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/welcome/">welcome</a>
       
     </div>
   </section>

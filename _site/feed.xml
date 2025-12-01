@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-11-28T10:16:07+05:30</updated>
+  <updated>2025-12-02T00:30:39+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,67 @@
 
   
   <entry>
+    <title>TryHackMe Advent of Cyber 2025 - 1</title>
+    <link href="http://localhost:4000/posts/AoC_2025_walkthrough/" rel="alternate" type="text/html" title="TryHackMe Advent of Cyber 2025 - 1" />
+    <published>2025-12-01T23:00:00+05:30</published>
+  
+    <updated>2025-12-02T00:23:33+05:30</updated>
+  
+    <id>http://localhost:4000/posts/AoC_2025_walkthrough/</id>
+    <content type="text/html" src="http://localhost:4000/posts/AoC_2025_walkthrough/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="WalkThrough" />
+    
+    <category term="THM" />
+    
+    <category term="AoC2025" />
+    
+  
+
+  <summary>Linux CLI - Shells Bells
+
+
+  TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
+
+
+Task 1: Introduction
+
+
+  Connect to the challenge machine. No additional actions required.
+
+
+Task 2: Introduction
+
+
+  
+    Which CLI command would you use to list a directory?
+
+    ls
+  
+  
+    What flag did you see inside of the McSkidy’s guide?
+
+    THM{learning-linux-cli}
+
+    Commands Used:
+
+      cd Guides
+  ls ...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>ImaginaryCTF 2025 Writeup</title>
     <link href="http://localhost:4000/posts/imaginaryctf_2025_writeup/" rel="alternate" type="text/html" title="ImaginaryCTF 2025 Writeup" />
     <published>2025-09-09T05:30:00+05:30</published>
   
-    <updated>2025-09-10T07:59:26+05:30</updated>
+    <updated>2025-12-02T00:10:16+05:30</updated>
   
     <id>http://localhost:4000/posts/imaginaryctf_2025_writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/imaginaryctf_2025_writeup/" />
@@ -60,7 +116,7 @@ Here are my writeups for the challenges I...</summary>
     <link href="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" rel="alternate" type="text/html" title="Autopsy - Tutorial" />
     <published>2025-07-23T12:30:00+05:30</published>
   
-    <updated>2025-07-23T12:50:21+05:30</updated>
+    <updated>2025-12-02T00:10:16+05:30</updated>
   
     <id>http://localhost:4000/posts/Autopsy-tutorial-for-beginners/</id>
     <content type="text/html" src="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" />
@@ -110,7 +166,7 @@ Here are my writeups for the challenges I...</summary>
     <link href="http://localhost:4000/posts/tsukuctf_2025_writeup/" rel="alternate" type="text/html" title="TsukuCTF 2025 writeups" />
     <published>2025-05-04T11:00:00+05:30</published>
   
-    <updated>2025-07-03T14:02:40+05:30</updated>
+    <updated>2025-12-02T00:10:16+05:30</updated>
   
     <id>http://localhost:4000/posts/tsukuctf_2025_writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/tsukuctf_2025_writeup/" />
@@ -127,32 +183,6 @@ Here are my writeups for the challenges I...</summary>
   
 
   <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>WolvCTF 2025 writeups</title>
-    <link href="http://localhost:4000/posts/wolvctf_2025_writeup/" rel="alternate" type="text/html" title="WolvCTF 2025 writeups" />
-    <published>2025-03-27T21:45:00+05:30</published>
-  
-    <updated>2025-03-27T21:45:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/wolvctf_2025_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/wolvctf_2025_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="Others" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.</summary>
 
   </entry>
 
