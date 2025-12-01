@@ -1,7 +1,7 @@
 ---
 title: WolvCTF 2025 writeups
 date: 2025-03-27 21:45:00 +0530
-categories: [CTF, WolvCTF]
+categories: [CTF, Others]
 tags: [ctf, writeups, cybersecurity, forensics, reverse-engineering, pwn, cryptography]     # TAG names should always be lowercase
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.
 ---

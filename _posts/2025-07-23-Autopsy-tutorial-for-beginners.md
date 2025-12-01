@@ -1,5 +1,5 @@
 ---
-title: Autopsy - Tutorial for N00bs
+title: Autopsy - Tutorial 
 date: 2025-07-23 12:30:00 +0530
 categories: [Tutorial]
 tags: [cybersecurity, forensics]     # TAG names should always be lowercase

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-12T17:19:26+05:30</updated>
+  <updated>2025-11-28T10:16:07+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>picoGym Reverse Engineering - Medium writeups</title>
-    <link href="http://localhost:4000/posts/picogym_rev_medium_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Medium writeups" />
-    <published>2025-07-25T11:00:00+05:30</published>
+    <title>ImaginaryCTF 2025 Writeup</title>
+    <link href="http://localhost:4000/posts/imaginaryctf_2025_writeup/" rel="alternate" type="text/html" title="ImaginaryCTF 2025 Writeup" />
+    <published>2025-09-09T05:30:00+05:30</published>
   
-    <updated>2025-07-25T11:00:00+05:30</updated>
+    <updated>2025-09-10T07:59:26+05:30</updated>
   
-    <id>http://localhost:4000/posts/picogym_rev_medium_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_medium_writeup/" />
+    <id>http://localhost:4000/posts/imaginaryctf_2025_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/imaginaryctf_2025_writeup/" />
     <author>
       <name>CYB3R BO1</name>
     </author>
@@ -36,18 +36,28 @@
     
     <category term="CTF" />
     
-    <category term="PicoCTF" />
+    <category term="Others" />
     
   
 
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
+  <summary>ImaginaryCTF 2025 Writeup
+
+
+
+Introduction
+
+Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under the handle LUZ1LF3R, we competed in ImaginaryCTF 2025, securing the 215th position.
+
+I focused on Reverse Engineering and Pwn challenges. Since I’m still new to this domain, I was thrilled to solve 9 challenges (including some Misc).
+
+Here are my writeups for the challenges I...</summary>
 
   </entry>
 
   
   <entry>
-    <title>Autopsy - Tutorial for N00bs</title>
-    <link href="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" rel="alternate" type="text/html" title="Autopsy - Tutorial for N00bs" />
+    <title>Autopsy - Tutorial</title>
+    <link href="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" rel="alternate" type="text/html" title="Autopsy - Tutorial" />
     <published>2025-07-23T12:30:00+05:30</published>
   
     <updated>2025-07-23T12:50:21+05:30</updated>
@@ -65,58 +75,6 @@
   
 
   <summary>This post consists of an article &amp;quot;Autopsy - Tutorial for N00bs&amp;quot;</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>picoGym Reverse Engineering - Hard writeups</title>
-    <link href="http://localhost:4000/posts/picogym_rev_hard_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Hard writeups" />
-    <published>2025-07-03T11:00:00+05:30</published>
-  
-    <updated>2025-07-03T11:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/picogym_rev_hard_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_hard_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="PicoCTF" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>picoGym Reverse Engineering - Easy writeups</title>
-    <link href="http://localhost:4000/posts/picogym_rev_easy_writeup/" rel="alternate" type="text/html" title="picoGym Reverse Engineering - Easy writeups" />
-    <published>2025-05-24T19:00:00+05:30</published>
-  
-    <updated>2025-05-24T19:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/picogym_rev_easy_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/picogym_rev_easy_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="PicoCTF" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
 
   </entry>
 
@@ -143,6 +101,58 @@
   
 
   <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>TsukuCTF 2025 writeups</title>
+    <link href="http://localhost:4000/posts/tsukuctf_2025_writeup/" rel="alternate" type="text/html" title="TsukuCTF 2025 writeups" />
+    <published>2025-05-04T11:00:00+05:30</published>
+  
+    <updated>2025-07-03T14:02:40+05:30</updated>
+  
+    <id>http://localhost:4000/posts/tsukuctf_2025_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/tsukuctf_2025_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="Others" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>WolvCTF 2025 writeups</title>
+    <link href="http://localhost:4000/posts/wolvctf_2025_writeup/" rel="alternate" type="text/html" title="WolvCTF 2025 writeups" />
+    <published>2025-03-27T21:45:00+05:30</published>
+  
+    <updated>2025-03-27T21:45:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/wolvctf_2025_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/wolvctf_2025_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="Others" />
+    
+  
+
+  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.</summary>
 
   </entry>
 
