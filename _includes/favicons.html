@@ -1,9 +1,11 @@
 <!-- Custom Favicons Override -->
+<!-- Prefer SVG circular favicon -->
 <link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="{{ '/assets/img/posts/favicons/apple-touch-icon.png' | relative_url }}"
+  rel="icon"
+  type="image/svg+xml"
+  href="{{ '/assets/img/posts/favicons/favicon-circle.svg' | relative_url }}"
 />
+<!-- PNG fallbacks -->
 <link
   rel="icon"
   type="image/png"
@@ -16,9 +18,11 @@
   sizes="16x16"
   href="{{ '/assets/img/posts/favicons/favicon-16x16.png' | relative_url }}"
 />
+<!-- Apple touch uses 180x180; consider a circular PNG here -->
 <link
-  rel="shortcut icon"
-  href="{{ '/assets/img/posts/favicons/favicon.ico' | relative_url }}"
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ '/assets/img/posts/favicons/apple-touch-icon.png' | relative_url }}"
 />
 <!-- Optional: if you later add these files to the same folder uncomment below -->
 {%- comment -%}
@@ -34,45 +38,6 @@
 <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
 <meta name="application-name" content="{{ site.title }}" />
 
-<!-- Runtime circular favicon conversion: crops the square PNG to a circle -->
-<script>
-  (function () {
-    var link =
-      document.querySelector('link[rel="icon"][sizes="32x32"]') ||
-      document.querySelector('link[rel="icon"]');
-    if (!link) return;
-    var src = link.getAttribute("href");
-    if (!src) return;
-    var img = new Image();
-    img.crossOrigin = "anonymous";
-    img.src = src;
-    img.onload = function () {
-      var size = 64; // generate a reasonably sharp data URL
-      var canvas = document.createElement("canvas");
-      canvas.width = size;
-      canvas.height = size;
-      var ctx = canvas.getContext("2d");
-      ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.clip();
-      // Draw source image scaled to canvas
-      ctx.drawImage(img, 0, 0, size, size);
-      try {
-        var dataURL = canvas.toDataURL("image/png");
-        // Replace existing favicon links with circular version
-        var iconLinks = document.querySelectorAll(
-          'link[rel="icon"], link[rel="shortcut icon"]'
-        );
-        iconLinks.forEach(function (l) {
-          l.href = dataURL;
-        });
-      } catch (e) {
-        /* silently ignore */
-      }
-    };
-  })();
-</script>
+<!-- Using SVG ensures a circular mask server-side, no JS needed. -->
 
-<!-- To permanently make it round, replace image files with transparent PNGs already cropped to a circle.
-		 Recommended sizes: 16x16, 32x32, 180x180 (apple-touch). Keep transparent corners. -->
+<!-- For Apple touch icon, provide a circular 180x180 PNG with transparent corners. -->
