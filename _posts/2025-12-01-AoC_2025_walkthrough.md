@@ -8,15 +8,15 @@ excerpt: "A walkthrough of THM's Advent of Cyber 2025"
 
 ![Advent of Cyber](/assets/img/posts/THM/AoC2025.png)
 
-#  Linux CLI - Shells Bells
+#  **Linux CLI - Shells Bells**
 
 >TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
 
-## Task 1: Introduction
+## **Task 1: Introduction**
 
 - Connect to the challenge machine. No additional actions required.
 
-## Task 2: Introduction
+## **Task 2: Introduction**
 
 - Which CLI command would you use to list a directory?
     
