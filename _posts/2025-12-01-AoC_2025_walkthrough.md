@@ -1,6 +1,6 @@
 ---
 title: "TryHackMe Advent of Cyber 2025"
-date: 2025-12-03 12:00:00 +0530
+date: 2025-12-03 11:30:00 +0530
 categories: [WalkThrough, THM, AoC2025]
 tags: [walkthrough, cybersecurity, tryhackme, aoc]
 excerpt: "A walkthrough of THM's Advent of Cyber 2025"
