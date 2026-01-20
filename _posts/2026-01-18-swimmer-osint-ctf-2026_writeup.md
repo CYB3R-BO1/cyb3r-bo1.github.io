@@ -1,6 +1,6 @@
 ---
 title: "SWIMMER OSINT CTF 2026: Writeup"
-date: 2026-02-17 20:40:00 +0530
+date: 2026-01-20 13:00:00 +0530
 categories: [CTF, Others]
 tags: [ctf, writeups, cybersecurity, osint]
 excerpt: "A writeup for SWIMMER OSINT CTF 2026 challenges."
@@ -15,6 +15,7 @@ excerpt: "A writeup for SWIMMER OSINT CTF 2026 challenges."
 ## TL;DR
 
 * Participated in **SWIMMER OSINT CTF 2026** (hosted by DIVER OSINT CTF)
+* Team: **0$1N7_K1dd13$**
 * Final rank: **200 / 688 teams**
 * Solved: **23 / 29 challenges**
 * Personally solved: **8 challenges**

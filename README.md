@@ -1,4 +1,4 @@
-# CYB3R BO1 — Security Research Blog
+# CYB3R BO1 - Security Research Blog
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
 ![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-red)
