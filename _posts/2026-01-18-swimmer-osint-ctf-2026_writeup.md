@@ -42,15 +42,15 @@ I competed in **0$1N7_K1dd13$** with *GregorSec, th3mujd11, Scorpius,* and *Codr
 * Personally solved: **8 challenges**
 
 <div style="display:flex; gap:10px;">
-  <img src="/assets/img/posts/swimmerCTF2026/swimmer.png" width="48%">
-  <img src="/assets/img/posts/swimmerCTF2026/team.png" width="48%">
+  <img src="/assets/img/posts/swimmerCTF2026/swimmer.png" alt="SWIMMER CTF banner" width="48%">
+  <img src="/assets/img/posts/swimmerCTF2026/team.png" alt="Team photo" width="48%">
 </div>
 
 <br>
 
 <div style="display:flex; gap:10px;">
-  <img src="/assets/img/posts/swimmerCTF2026/certificate.png" width="48%">
-  <img src="/assets/img/posts/swimmerCTF2026/scoreboard.png" width="48%">
+  <img src="/assets/img/posts/swimmerCTF2026/certificate.png" alt="Certificate" width="48%">
+  <img src="/assets/img/posts/swimmerCTF2026/scoreboard.png" alt="Scoreboard" width="48%">
 </div>
 
 ---
@@ -102,7 +102,7 @@ The article clearly states that **Cathay Pacific operated flight CX8100** to com
 **Description**
 Identify the person sitting in the indicated seat on flight CX8100.
 
-<img src="/assets/img/posts/swimmerCTF2026/pilot.jpg">
+<img src="/assets/img/posts/swimmerCTF2026/pilot.jpg" alt="Cockpit seat photo">
 
 **Flag:** `SWIMMER{Adrian Scott}`
 
@@ -142,7 +142,7 @@ I used Gemini to extract event details, confirming:
 
 I located the venue in OpenStreetMap, enabled **Map Data**, clicked the building outline, and obtained the way ID: **628293186**.
 
-<img src="/assets/img/posts/swimmerCTF2026/don.png">
+<img src="/assets/img/posts/swimmerCTF2026/don.png" alt="Event flyer">
 
 ---
 
@@ -190,9 +190,9 @@ led to:
 [https://11foot8.com/moving-truck-runs-red-light-and-scrapes-the-11foot88-bridge/](https://11foot8.com/moving-truck-runs-red-light-and-scrapes-the-11foot88-bridge/)
 
 The video clearly shows the truck branding:
-**[www.MiracleMoversUSA.com](http://www.MiracleMoversUSA.com)**
+**[www.MiracleMoversUSA.com](https://www.MiracleMoversUSA.com)**
 
-<img src="/assets/img/posts/swimmerCTF2026/truck.png">
+<img src="/assets/img/posts/swimmerCTF2026/truck.png" alt="Truck with branding">
 
 ---
 
@@ -216,7 +216,7 @@ The controller dialogue references:
 
 Using road curvature and nearby buildings visible in the footage, I matched the location in Google Maps and extracted the coordinates.
 
-<img src="/assets/img/posts/swimmerCTF2026/debris.png">
+<img src="/assets/img/posts/swimmerCTF2026/debris.png" alt="Debris location screenshot">
 
 ---
 
@@ -224,7 +224,7 @@ Using road curvature and nearby buildings visible in the footage, I matched the 
 
 **Tools:** Google Lens, Wikipedia
 
-<img src="/assets/img/posts/swimmerCTF2026/source2-1.png">
+<img src="/assets/img/posts/swimmerCTF2026/source2-1.png" alt="Archival image 1">
 
 **Flag:** `SWIMMER{10.11501/967480}`
 
@@ -238,7 +238,7 @@ Source:
 The DOI shown in the archival metadata:
 **10.11501/967480**
 
-<img src="/assets/img/posts/swimmerCTF2026/source2-2.png">
+<img src="/assets/img/posts/swimmerCTF2026/source2-2.png" alt="Archival image 2">
 
 ---
 
@@ -246,7 +246,7 @@ The DOI shown in the archival metadata:
 
 **Tools:** Google, LinkedIn, Image Analysis
 
-<img src="/assets/img/posts/swimmerCTF2026/date.jpg">
+<img src="/assets/img/posts/swimmerCTF2026/date.jpg" alt="Event banner">
 
 **Flag:** `SWIMMER{2025/12/07}`
 
