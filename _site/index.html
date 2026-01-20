@@ -59,11 +59,13 @@
   </title>
 
   <!-- Custom Favicons Override -->
+<!-- Prefer SVG circular favicon -->
 <link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/assets/img/posts/favicons/apple-touch-icon.png"
+  rel="icon"
+  type="image/svg+xml"
+  href="/assets/img/posts/favicons/favicon-circle.svg"
 />
+<!-- PNG fallbacks -->
 <link
   rel="icon"
   type="image/png"
@@ -76,55 +78,18 @@
   sizes="16x16"
   href="/assets/img/posts/favicons/favicon-16x16.png"
 />
+<!-- Apple touch uses 180x180; consider a circular PNG here -->
 <link
-  rel="shortcut icon"
-  href="/assets/img/posts/favicons/favicon.ico"
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/img/posts/favicons/apple-touch-icon.png"
 />
 <!-- Optional: if you later add these files to the same folder uncomment below --><meta name="apple-mobile-web-app-title" content="CYB3R_BO1" />
 <meta name="application-name" content="CYB3R_BO1" />
 
-<!-- Runtime circular favicon conversion: crops the square PNG to a circle -->
-<script>
-  (function () {
-    var link =
-      document.querySelector('link[rel="icon"][sizes="32x32"]') ||
-      document.querySelector('link[rel="icon"]');
-    if (!link) return;
-    var src = link.getAttribute("href");
-    if (!src) return;
-    var img = new Image();
-    img.crossOrigin = "anonymous";
-    img.src = src;
-    img.onload = function () {
-      var size = 64; // generate a reasonably sharp data URL
-      var canvas = document.createElement("canvas");
-      canvas.width = size;
-      canvas.height = size;
-      var ctx = canvas.getContext("2d");
-      ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.clip();
-      // Draw source image scaled to canvas
-      ctx.drawImage(img, 0, 0, size, size);
-      try {
-        var dataURL = canvas.toDataURL("image/png");
-        // Replace existing favicon links with circular version
-        var iconLinks = document.querySelectorAll(
-          'link[rel="icon"], link[rel="shortcut icon"]'
-        );
-        iconLinks.forEach(function (l) {
-          l.href = dataURL;
-        });
-      } catch (e) {
-        /* silently ignore */
-      }
-    };
-  })();
-</script>
+<!-- Using SVG ensures a circular mask server-side, no JS needed. -->
 
-<!-- To permanently make it round, replace image files with transparent PNGs already cropped to a circle.
-		 Recommended sizes: 16x16, 32x32, 180x180 (apple-touch). Keep transparent corners. -->
+<!-- For Apple touch icon, provide a circular 180x180 PNG with transparent corners. -->
 
 
   <!-- Resource Hints -->
@@ -594,32 +559,25 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   
     <article class="card-wrapper card">
-      <a href="/posts/AoC_2025_walkthrough/" class="post-preview row g-0 flex-md-row-reverse">
+      <a href="/posts/swimmer-osint-ctf-2026_writeup/" class="post-preview row g-0 flex-md-row-reverse">
         
 
         
 
         <div class="col-md-12">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">TryHackMe Advent of Cyber 2025 - 1</h1>
+            <h1 class="card-title my-2 mt-md-0">SWIMMER OSINT CTF 2026: Writeup</h1>
 
             <div class="card-text content mt-0 mb-3">
-              <p>Linux CLI - Shells Bells
+              <p>TL;DR
 
 
-  TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
-
-
-Task 1: Introduction
-
-
-  Connect to the challenge machine. No additional actions required.
-
-
-Task 2: Introduction
-
-
-  ...</p>
+  Participated in SWIMMER OSINT CTF 2026 (hosted by DIVER OSINT CTF)
+  Team: 0$1N7_K1dd13$
+  Final rank: 200 / 688 teams
+  Solved: 23 / 29 challenges
+  Personally solved: 8 challenges
+  Foc...</p>
             </div>
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">
@@ -636,11 +594,69 @@ Task 2: Introduction
 
 <time
   
-  data-ts="1764610200"
+  data-ts="1768894200"
   data-df="ll"
   
 >
-  Dec  1, 2025
+  Jan 20, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      CTF,
+                      Others
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/ps-webllm_walkthrough/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">PortSwigger: Web LLM attacks</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>Introduction
+
+Large Language Models are increasingly embedded into web applications, creating new attack surfaces. These labs from PortSwigger demonstrate how LLM-powered features can be manipulate...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1764657000"
+  data-df="ll"
+  
+>
+  Dec  2, 2025
 </time>
 
 
@@ -650,8 +666,7 @@ Task 2: Introduction
                   <span class="categories">
                     
                       WalkThrough,
-                      THM,
-                      AoC2025
+                      PortSwigger
                   </span>
                 
               </div>
@@ -1042,7 +1057,14 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/AoC_2025_walkthrough/">TryHackMe Advent of Cyber 2025 - 1</a>
+          <a href="/posts/swimmer-osint-ctf-2026_writeup/">SWIMMER OSINT CTF 2026: Writeup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ps-webllm_walkthrough/">PortSwigger: Web LLM attacks</a>
         </li>
       
         
@@ -1064,13 +1086,6 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tsukuctf_2025_writeup/">TsukuCTF 2025 writeups</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Autopsy-tutorial-for-beginners/">Autopsy - Tutorial</a>
         </li>
       
     </ul>
@@ -1274,15 +1289,6 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1303,38 +1309,6 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -1343,21 +1317,12 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-      
-        
-        
-
   
     
     
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -1388,6 +1353,33 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1405,17 +1397,40 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1461,16 +1476,16 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">cryptography</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">ai</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/portswigger/">portswigger</a>
       
     </div>
   </section>
@@ -1497,7 +1512,7 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
   "
 >
   <p>©
-    <time>2025</time>
+    <time>2026</time>
 
     
       <a href="https://twitter.com/cyb3r_bo1">CYB3R BO1</a>.
@@ -1727,15 +1742,6 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1756,38 +1762,6 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -1796,21 +1770,12 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-      
-        
-        
-
   
     
     
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -1841,6 +1806,33 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1858,17 +1850,40 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1914,16 +1929,16 @@ This blog is a technical record of my work in cybersecurity. I use it to documen
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">cryptography</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">ai</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/portswigger/">portswigger</a>
       
     </div>
   </section>

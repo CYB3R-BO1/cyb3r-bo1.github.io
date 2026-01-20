@@ -6,12 +6,6 @@ tags: [ctf, writeups, cybersecurity, osint]
 excerpt: "A writeup for SWIMMER OSINT CTF 2026 challenges."
 ---
 
-# SWIMMER OSINT CTF 2026: Write-up
-
-**by CYB3R-BO1**
-
----
-
 ## TL;DR
 
 * Participated in **SWIMMER OSINT CTF 2026** (hosted by DIVER OSINT CTF)
@@ -41,16 +35,14 @@ I competed in **0$1N7_K1dd13$** with *GregorSec, th3mujd11, Scorpius,* and *Codr
 * Solved: **23 / 29**
 * Personally solved: **8 challenges**
 
-<div style="display:flex; gap:10px;">
-  <img src="/assets/img/posts/swimmerCTF2026/swimmer.png" alt="SWIMMER CTF banner" width="48%">
-  <img src="/assets/img/posts/swimmerCTF2026/team.png" alt="Team photo" width="48%">
+<div style="display:flex; gap:5px">
+    <img src="/assets/img/posts/swimmerCTF2026/swimmer.png" alt="SWIMMER CTF banner" style="width: 100%; height: auto;">
+    <img src="/assets/img/posts/swimmerCTF2026/team.png" alt="Team photo" width="100%">
 </div>
 
-<br>
-
-<div style="display:flex; gap:10px;">
-  <img src="/assets/img/posts/swimmerCTF2026/certificate.png" alt="Certificate" width="48%">
-  <img src="/assets/img/posts/swimmerCTF2026/scoreboard.png" alt="Scoreboard" width="48%">
+<div style="display:flex; gap:5px">
+  <img src="/assets/img/posts/swimmerCTF2026/certificate.png" alt="Certificate" width="80%">
+  <img src="/assets/img/posts/swimmerCTF2026/scoreboard.png" alt="Scoreboard" width="100%">
 </div>
 
 ---
@@ -72,7 +64,7 @@ I competed in **0$1N7_K1dd13$** with *GregorSec, th3mujd11, Scorpius,* and *Codr
 
 ## research_2025
 
-### cx
+### **cx**
 
 **Tools:** Google, News Articles
 
@@ -95,7 +87,7 @@ The article clearly states that **Cathay Pacific operated flight CX8100** to com
 
 ---
 
-### pilot
+### **pilot**
 
 **Tools:** YouTube, LinkedIn
 
@@ -120,7 +112,7 @@ The YouTube footage clearly shows **Adrian Scott** seated on the right-hand side
 
 ---
 
-### flag_on_the_don
+### **flag_on_the_don**
 
 **Tools:** Google, Gemini, OpenStreetMap
 
@@ -146,7 +138,7 @@ I located the venue in OpenStreetMap, enabled **Map Data**, clicked the building
 
 ---
 
-### obsolete
+### **obsolete**
 
 **Tools:** Google, UN Digital Library
 
@@ -169,7 +161,7 @@ Countries without Y/N markers were abstentions:
 
 ---
 
-### truck
+### **truck**
 
 **Tools:** Google Maps, 11foot8.com
 
@@ -196,7 +188,7 @@ The video clearly shows the truck branding:
 
 ---
 
-### debris
+### **debris**
 
 **Tools:** YouTube, Google Maps
 
@@ -220,7 +212,7 @@ Using road curvature and nearby buildings visible in the footage, I matched the 
 
 ---
 
-### rain_04_source2
+### **rain_04_source2**
 
 **Tools:** Google Lens, Wikipedia
 
@@ -242,7 +234,7 @@ The DOI shown in the archival metadata:
 
 ---
 
-### rain_05_date
+### **rain_05_date**
 
 **Tools:** Google, LinkedIn, Image Analysis
 

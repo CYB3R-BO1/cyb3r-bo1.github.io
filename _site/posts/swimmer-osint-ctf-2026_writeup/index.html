@@ -39,32 +39,34 @@
 
    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="TryHackMe Advent of Cyber 2025 - 1" />
+<meta property="og:title" content="SWIMMER OSINT CTF 2026: Writeup" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A walkthrough of THM’s Advent of Cyber 2025" />
-<meta property="og:description" content="A walkthrough of THM’s Advent of Cyber 2025" />
-<link rel="canonical" href="http://localhost:4000/posts/AoC_2025_walkthrough/" />
-<meta property="og:url" content="http://localhost:4000/posts/AoC_2025_walkthrough/" />
+<meta name="description" content="A writeup for SWIMMER OSINT CTF 2026 challenges." />
+<meta property="og:description" content="A writeup for SWIMMER OSINT CTF 2026 challenges." />
+<link rel="canonical" href="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" />
+<meta property="og:url" content="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" />
 <meta property="og:site_name" content="CYB3R_BO1" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-12-01T23:00:00+05:30" />
+<meta property="article:published_time" content="2026-01-20T13:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="TryHackMe Advent of Cyber 2025 - 1" />
+<meta property="twitter:title" content="SWIMMER OSINT CTF 2026: Writeup" />
 <meta name="twitter:site" content="@cyb3r_bo1" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-12-02T00:23:33+05:30","datePublished":"2025-12-01T23:00:00+05:30","description":"A walkthrough of THM’s Advent of Cyber 2025","headline":"TryHackMe Advent of Cyber 2025 - 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/AoC_2025_walkthrough/"},"url":"http://localhost:4000/posts/AoC_2025_walkthrough/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-20T13:20:42+05:30","datePublished":"2026-01-20T13:00:00+05:30","description":"A writeup for SWIMMER OSINT CTF 2026 challenges.","headline":"SWIMMER OSINT CTF 2026: Writeup","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/"},"url":"http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>TryHackMe Advent of Cyber 2025 - 1 | CYB3R_BO1
+  <title>SWIMMER OSINT CTF 2026: Writeup | CYB3R_BO1
   </title>
 
   <!-- Custom Favicons Override -->
+<!-- Prefer SVG circular favicon -->
 <link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/assets/img/posts/favicons/apple-touch-icon.png"
+  rel="icon"
+  type="image/svg+xml"
+  href="/assets/img/posts/favicons/favicon-circle.svg"
 />
+<!-- PNG fallbacks -->
 <link
   rel="icon"
   type="image/png"
@@ -77,55 +79,18 @@
   sizes="16x16"
   href="/assets/img/posts/favicons/favicon-16x16.png"
 />
+<!-- Apple touch uses 180x180; consider a circular PNG here -->
 <link
-  rel="shortcut icon"
-  href="/assets/img/posts/favicons/favicon.ico"
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/img/posts/favicons/apple-touch-icon.png"
 />
 <!-- Optional: if you later add these files to the same folder uncomment below --><meta name="apple-mobile-web-app-title" content="CYB3R_BO1" />
 <meta name="application-name" content="CYB3R_BO1" />
 
-<!-- Runtime circular favicon conversion: crops the square PNG to a circle -->
-<script>
-  (function () {
-    var link =
-      document.querySelector('link[rel="icon"][sizes="32x32"]') ||
-      document.querySelector('link[rel="icon"]');
-    if (!link) return;
-    var src = link.getAttribute("href");
-    if (!src) return;
-    var img = new Image();
-    img.crossOrigin = "anonymous";
-    img.src = src;
-    img.onload = function () {
-      var size = 64; // generate a reasonably sharp data URL
-      var canvas = document.createElement("canvas");
-      canvas.width = size;
-      canvas.height = size;
-      var ctx = canvas.getContext("2d");
-      ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.clip();
-      // Draw source image scaled to canvas
-      ctx.drawImage(img, 0, 0, size, size);
-      try {
-        var dataURL = canvas.toDataURL("image/png");
-        // Replace existing favicon links with circular version
-        var iconLinks = document.querySelectorAll(
-          'link[rel="icon"], link[rel="shortcut icon"]'
-        );
-        iconLinks.forEach(function (l) {
-          l.href = dataURL;
-        });
-      } catch (e) {
-        /* silently ignore */
-      }
-    };
-  })();
-</script>
+<!-- Using SVG ensures a circular mask server-side, no JS needed. -->
 
-<!-- To permanently make it round, replace image files with transparent PNGs already cropped to a circle.
-		 Recommended sizes: 16x16, 32x32, 180x180 (apple-touch). Keep transparent corners. -->
+<!-- For Apple touch icon, provide a circular 180x180 PNG with transparent corners. -->
 
 
   <!-- Resource Hints -->
@@ -520,7 +485,7 @@
         
           
             
-              <span>TryHackMe Advent of Cyber 2025 - 1</span>
+              <span>SWIMMER OSINT CTF 2026: Writeup</span>
             
 
           
@@ -595,6 +560,668 @@
     
       
       
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
     
 
     
@@ -705,6 +1332,39 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -712,6 +1372,104 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -740,7 +1498,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>TryHackMe Advent of Cyber 2025 - 1</h1>
+    <h1 data-toc-skip>SWIMMER OSINT CTF 2026: Writeup</h1>
     
 
     <div class="post-meta text-muted">
@@ -757,13 +1515,13 @@
 
 <time
   
-  data-ts="1764610200"
+  data-ts="1768894200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  1, 2025
+  Jan 20, 2026
 </time>
 
       </span>
@@ -782,13 +1540,13 @@
 
 <time
   
-  data-ts="1764615213"
+  data-ts="1768895442"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  2, 2025
+  Jan 20, 2026
 </time>
 
         </span>
@@ -835,9 +1593,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="124 words"
+  title="674 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -846,7 +1604,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">TryHackMe Advent of Cyber 2025 - 1</span>
+      <span class="label text-truncate">SWIMMER OSINT CTF 2026: Writeup</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -859,7 +1617,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">TryHackMe Advent of Cyber 2025 - 1</div>
+        <div class="label text-truncate py-2 ms-4">SWIMMER OSINT CTF 2026: Writeup</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -869,86 +1627,340 @@
   
 
   <div class="content">
-    <p><a href="/assets/img/posts/THM/AoC2025.png" class="popup img-link  shimmer"><img src="/assets/img/posts/THM/AoC2025.png" alt="Advent of Cyber" loading="lazy"></a></p>
+    <h2 id="tldr"><span class="me-2">TL;DR</span><a href="#tldr" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h1 id="linux-cli---shells-bells">Linux CLI - Shells Bells</h1>
+<ul>
+  <li>Participated in <strong>SWIMMER OSINT CTF 2026</strong> (hosted by DIVER OSINT CTF)</li>
+  <li>Team: <strong>0$1N7_K1dd13$</strong></li>
+  <li>Final rank: <strong>200 / 688 teams</strong></li>
+  <li>Solved: <strong>23 / 29 challenges</strong></li>
+  <li>Personally solved: <strong>8 challenges</strong></li>
+  <li>Focus areas: aviation OSINT, geo-location, archival research, Japanese media OSINT</li>
+  <li>Core tools: Google, Google Lens, OpenStreetMap, YouTube, UN Digital Library, Wikipedia</li>
+</ul>
+
+<p>Plus Ultra.</p>
+
+<hr />
+
+<h2 id="event-info"><span class="me-2">Event Info</span><a href="#event-info" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Swimmer OSINT CTF 2026 is a 12-hour CTF with all challenges being OSINT. Max team size is 6 and the event is held online.</p>
+
+<ul>
+  <li><strong>CTFtime:</strong> <a href="https://ctftime.org/event/2986">https://ctftime.org/event/2986</a></li>
+  <li><strong>Platform:</strong> <a href="https://swimmer.diverctf.org/">https://swimmer.diverctf.org/</a></li>
+</ul>
+
+<p>I played with teammates from <strong>$cr1pt_K1dd13$</strong>.
+Due to the 6-member limit, we split into two teams.
+I competed in <strong>0$1N7_K1dd13$</strong> with <em>GregorSec, th3mujd11, Scorpius,</em> and <em>Codru</em>.</p>
+
+<ul>
+  <li>Rank: <strong>200 / 688</strong></li>
+  <li>Solved: <strong>23 / 29</strong></li>
+  <li>Personally solved: <strong>8 challenges</strong></li>
+</ul>
+
+<div style="display:flex; gap:5px">
+    <a href="/assets/img/posts/swimmerCTF2026/swimmer.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/swimmer.png" alt="SWIMMER CTF banner" style="width: 100%; height: auto;" loading="lazy"></a>
+    <a href="/assets/img/posts/swimmerCTF2026/team.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/team.png" alt="Team photo" width="100%" loading="lazy"></a>
+</div>
+
+<div style="display:flex; gap:5px">
+  <a href="/assets/img/posts/swimmerCTF2026/certificate.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/certificate.png" alt="Certificate" width="80%" loading="lazy"></a>
+  <a href="/assets/img/posts/swimmerCTF2026/scoreboard.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/scoreboard.png" alt="Scoreboard" width="100%" loading="lazy"></a>
+</div>
+
+<hr />
+
+<h2 id="challenge-index"><span class="me-2">Challenge Index</span><a href="#challenge-index" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Challenge</th>
+      <th>Core Technique</th>
+      <th>Tools Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>research_2025</td>
+      <td>cx</td>
+      <td>Aviation OSINT</td>
+      <td>Google, News Articles</td>
+    </tr>
+    <tr>
+      <td>research_2025</td>
+      <td>pilot</td>
+      <td>Video Analysis</td>
+      <td>YouTube, LinkedIn</td>
+    </tr>
+    <tr>
+      <td>research_2025</td>
+      <td>flag_on_the_don</td>
+      <td>Event OSINT + Geo</td>
+      <td>Google, Gemini, OpenStreetMap</td>
+    </tr>
+    <tr>
+      <td>research_2025</td>
+      <td>obsolete</td>
+      <td>Archival Research</td>
+      <td>UN Digital Library, Google</td>
+    </tr>
+    <tr>
+      <td>research_2025</td>
+      <td>truck</td>
+      <td>Geo + Video OSINT</td>
+      <td>Google Maps, 11foot8.com</td>
+    </tr>
+    <tr>
+      <td>research_2025</td>
+      <td>debris</td>
+      <td>Geo-location</td>
+      <td>YouTube, Google Maps</td>
+    </tr>
+    <tr>
+      <td>tgt_rain</td>
+      <td>rain_04_source2</td>
+      <td>Reverse Image Search</td>
+      <td>Google Lens, Wikipedia</td>
+    </tr>
+    <tr>
+      <td>tgt_rain</td>
+      <td>rain_05_date</td>
+      <td>Event Correlation</td>
+      <td>LinkedIn, Image Analysis</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h2 id="research_2025"><span class="me-2">research_2025</span><a href="#research_2025" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="cx"><span class="me-2"><strong>cx</strong></span><a href="#cx" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google, News Articles</p>
+
+<p><strong>Description</strong>
+In Spring 2025, a special flight commemorated the 100th anniversary of an airport that once existed in Hong Kong.
+Find the flight number.</p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{CX8100}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I searched for combinations of:</p>
 
 <blockquote>
-  <p>TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)</p>
+  <p>“special flight Hong Kong 100th anniversary 2025”</p>
 </blockquote>
 
-<h2 id="task-1-introduction"><span class="me-2">Task 1: Introduction</span><a href="#task-1-introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>This led me to the following article:
+<a href="https://campaignbriefasia.com/2025/04/11/flight-cx8100-takes-off-cathay-soars-once-more-over-kai-tak-in-tribute-to-legendary-flight-path/">https://campaignbriefasia.com/2025/04/11/flight-cx8100-takes-off-cathay-soars-once-more-over-kai-tak-in-tribute-to-legendary-flight-path/</a></p>
+
+<p>The article clearly states that <strong>Cathay Pacific operated flight CX8100</strong> to commemorate the Kai Tak Airport flight path anniversary.</p>
+
+<hr />
+
+<h3 id="pilot"><span class="me-2"><strong>pilot</strong></span><a href="#pilot" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> YouTube, LinkedIn</p>
+
+<p><strong>Description</strong>
+Identify the person sitting in the indicated seat on flight CX8100.</p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/pilot.jpg" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/pilot.jpg" alt="Cockpit seat photo" loading="lazy"></a></p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{Adrian Scott}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I reviewed related articles and videos about flight CX8100:</p>
 
 <ul>
-  <li>Connect to the challenge machine. No additional actions required.</li>
+  <li><a href="https://www.linkedin.com/pulse/100-years-hong-kong-kai-tak-airport-significance-history-mitali-pant-erbxc">LinkedIn article describing the commemorative flight</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Fjs9AfnyuLg">YouTube footage showing cockpit scenes</a></li>
 </ul>
 
-<h2 id="task-2-introduction"><span class="me-2">Task 2: Introduction</span><a href="#task-2-introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>The crew consisted of:
+Geoffrey Lui, Adrian Scott, Boris Wong, Darren Palmer.</p>
+
+<p>The YouTube footage clearly shows <strong>Adrian Scott</strong> seated on the right-hand side, matching the seat diagram in the challenge image.</p>
+
+<hr />
+
+<h3 id="flag_on_the_don"><span class="me-2"><strong>flag_on_the_don</strong></span><a href="#flag_on_the_don" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google, Gemini, OpenStreetMap</p>
+
+<p><strong>Description</strong>
+On August 28th 2025, an event using <em>Taiko no Tatsujin</em> was held in Gunma Prefecture.
+Find the OpenStreetMap way ID of the venue.</p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{628293186}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I found a Japanese PDF listing city events:
+<a href="https://www.city.shibukawa.lg.jp/manage/contents/upload/68870b94eeb0d.pdf">https://www.city.shibukawa.lg.jp/manage/contents/upload/68870b94eeb0d.pdf</a></p>
+
+<p>I used Gemini to extract event details, confirming:</p>
 
 <ul>
-  <li>
-    <p>Which CLI command would you use to list a directory?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">ls</code></p>
-  </li>
-  <li>
-    <p>What flag did you see inside of the McSkidy’s guide?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">THM{learning-linux-cli}</code></p>
-
-    <p>Commands Used:</p>
-
-    <div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>  <span class="nb">cd </span>Guides
-  <span class="nb">ls</span> <span class="nt">-la</span>
-  <span class="nb">cat</span> .guides.txt
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>
-    <p>Which command helped you filter the logs for failed logins?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">grep</code></p>
-  </li>
-  <li>
-    <p>What flag did you see inside the Eggstrike script?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">THM{sir-carrotbane-attacks}</code></p>
-
-    <p>Commands Used:</p>
-
-    <div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>  <span class="nb">cat</span> /home/socmas/2025/eggstrike.sh
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>
-    <p>Which command would you run to switch to the root user?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">sudo su</code></p>
-  </li>
-  <li>
-    <p>Finally, what flag did Sir Carrotbane leave in the root bash history?</p>
-
-    <p><code class="language-plaintext highlighter-rouge">THM{until-we-meet-again}</code></p>
-
-    <p>Commands used:</p>
-
-    <div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>  <span class="nb">sudo </span>su
-  <span class="nb">cd</span> /root/
-  <span class="nb">cat</span> .bash_history
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
+  <li>Event date: 28 August 2025</li>
+  <li>Venue: Shibukawa Civic Hall, Gunma</li>
 </ul>
+
+<p>I located the venue in OpenStreetMap, enabled <strong>Map Data</strong>, clicked the building outline, and obtained the way ID: <strong>628293186</strong>.</p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/don.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/don.png" alt="Event flyer" loading="lazy"></a></p>
+
+<hr />
+
+<h3 id="obsolete"><span class="me-2"><strong>obsolete</strong></span><a href="#obsolete" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google, UN Digital Library</p>
+
+<p><strong>Description</strong>
+Find which countries abstained in UNGA Resolution 50/52 (1995).</p>
+
+<p><strong>Flag:</strong>
+<code class="language-plaintext highlighter-rouge">SWIMMER{CUBA_DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA_LIBYAN ARAB JAMAHIRIYA}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I located UNGA Resolution 50/52 in the UN Digital Library:
+<a href="https://digitallibrary.un.org/record/284118?ln=en">https://digitallibrary.un.org/record/284118?ln=en</a></p>
+
+<p>Countries without Y/N markers were abstentions:</p>
+
+<ul>
+  <li>CUBA</li>
+  <li>DEMOCRATIC PEOPLE’S REPUBLIC OF KOREA</li>
+  <li>LIBYAN ARAB JAMAHIRIYA</li>
+</ul>
+
+<hr />
+
+<h3 id="truck"><span class="me-2"><strong>truck</strong></span><a href="#truck" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google Maps, 11foot8.com</p>
+
+<p><strong>Description</strong>
+Identify the FQDN on a truck at a given Plus Code.</p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{www.MiracleMoversUSA.com}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>The Plus Code resolved to <strong>The Can Opener Bridge, Durham</strong>.</p>
+
+<p>Searching:</p>
+
+<blockquote>
+  <p>“The Can Opener Bridge June 21 2025”</p>
+</blockquote>
+
+<p>led to:
+<a href="https://11foot8.com/moving-truck-runs-red-light-and-scrapes-the-11foot88-bridge/">https://11foot8.com/moving-truck-runs-red-light-and-scrapes-the-11foot88-bridge/</a></p>
+
+<p>The video clearly shows the truck branding:
+<strong><a href="https://www.MiracleMoversUSA.com">www.MiracleMoversUSA.com</a></strong></p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/truck.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/truck.png" alt="Truck with branding" loading="lazy"></a></p>
+
+<hr />
+
+<h3 id="debris"><span class="me-2"><strong>debris</strong></span><a href="#debris" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> YouTube, Google Maps</p>
+
+<p><strong>Description</strong>
+Find where a ton bag was initially dropped.</p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">35.7131787, 139.7296142</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I found footage from Mezamashi Media:
+<a href="https://mezamashi.media/articles/-/232641">https://mezamashi.media/articles/-/232641</a>
+<a href="https://www.youtube.com/watch?v=xo_2KZ3n668">https://www.youtube.com/watch?v=xo_2KZ3n668</a></p>
+
+<p>The controller dialogue references:
+<strong>Gokokuji Road, Otowa</strong>.</p>
+
+<p>Using road curvature and nearby buildings visible in the footage, I matched the location in Google Maps and extracted the coordinates.</p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/debris.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/debris.png" alt="Debris location screenshot" loading="lazy"></a></p>
+
+<hr />
+
+<h3 id="rain_04_source2"><span class="me-2"><strong>rain_04_source2</strong></span><a href="#rain_04_source2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google Lens, Wikipedia</p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/source2-1.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/source2-1.png" alt="Archival image 1" loading="lazy"></a></p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{10.11501/967480}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>Reverse image search identified the design as Watanabe Fukuzo’s entry for the National Diet Building competition.</p>
+
+<p>Source:
+<a href="https://dl.ndl.go.jp/pid/967480/1/7">https://dl.ndl.go.jp/pid/967480/1/7</a></p>
+
+<p>The DOI shown in the archival metadata:
+<strong>10.11501/967480</strong></p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/source2-2.png" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/source2-2.png" alt="Archival image 2" loading="lazy"></a></p>
+
+<hr />
+
+<h3 id="rain_05_date"><span class="me-2"><strong>rain_05_date</strong></span><a href="#rain_05_date" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><strong>Tools:</strong> Google, LinkedIn, Image Analysis</p>
+
+<p><a href="/assets/img/posts/swimmerCTF2026/date.jpg" class="popup img-link  shimmer"><img src="/assets/img/posts/swimmerCTF2026/date.jpg" alt="Event banner" loading="lazy"></a></p>
+
+<p><strong>Flag:</strong> <code class="language-plaintext highlighter-rouge">SWIMMER{2025/12/07}</code></p>
+
+<p><strong>Write-up</strong></p>
+
+<p>I identified the green banner as:</p>
+
+<blockquote>
+  <p><em>SUNTORY 10000 Freude Beethoven’s 9th</em></p>
+</blockquote>
+
+<p>Searching Google, found a helpful LinkedIn post:
+<a href="https://www.linkedin.com/posts/suntory-holdings-limited_suntory10000freude-givingbacktosociety-activity-7404981711249408000-KAj6">https://www.linkedin.com/posts/suntory-holdings-limited_suntory10000freude-givingbacktosociety-activity-7404981711249408000-KAj6</a></p>
+
+<p>This confirmed the event occurred on <strong>7 December 2025</strong>.</p>
+
+<hr />
+
+<h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>This CTF heavily favored Japanese-language OSINT and media tracing.
+It significantly improved my skills in:</p>
+
+<ul>
+  <li>event correlation</li>
+  <li>video-based geo-location</li>
+  <li>archival document analysis</li>
+  <li>multilingual OSINT</li>
+</ul>
+
+<p>We didn’t place at the top, but I did learn a lot.</p>
+
+<p>Plus Ultra.</p>
+
+<hr />
 
   </div>
 
@@ -958,9 +1970,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/walkthrough/">WalkThrough</a>,
-          <a href="/categories/thm/">THM</a>,
-          <a href="/categories/aoc2025/">AoC2025</a>
+          <a href="/categories/ctf/">CTF</a>,
+          <a href="/categories/others/">Others</a>
       </div>
     
 
@@ -970,9 +1981,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/walkthrough/"
+            href="/tags/ctf/"
             class="post-tag no-text-decoration"
-          >walkthrough</a>
+          >ctf</a>
+        
+          <a
+            href="/tags/writeups/"
+            class="post-tag no-text-decoration"
+          >writeups</a>
         
           <a
             href="/tags/cybersecurity/"
@@ -980,14 +1996,9 @@
           >cybersecurity</a>
         
           <a
-            href="/tags/tryhackme/"
+            href="/tags/osint/"
             class="post-tag no-text-decoration"
-          >tryhackme</a>
-        
-          <a
-            href="/tags/aoc/"
-            class="post-tag no-text-decoration"
-          >aoc</a>
+          >osint</a>
         
       </div>
     
@@ -1023,21 +2034,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Advent%20of%20Cyber%202025%20-%201%20-%20CYB3R_BO1&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FAoC_2025_walkthrough%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=SWIMMER%20OSINT%20CTF%202026:%20Writeup%20-%20CYB3R_BO1&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswimmer-osint-ctf-2026_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=TryHackMe%20Advent%20of%20Cyber%202025%20-%201%20-%20CYB3R_BO1&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FAoC_2025_walkthrough%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=SWIMMER%20OSINT%20CTF%202026:%20Writeup%20-%20CYB3R_BO1&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswimmer-osint-ctf-2026_writeup%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FAoC_2025_walkthrough%2F&text=TryHackMe%20Advent%20of%20Cyber%202025%20-%201%20-%20CYB3R_BO1" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswimmer-osint-ctf-2026_writeup%2F&text=SWIMMER%20OSINT%20CTF%202026:%20Writeup%20-%20CYB3R_BO1" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1092,7 +2103,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/AoC_2025_walkthrough/">TryHackMe Advent of Cyber 2025 - 1</a>
+          <a href="/posts/swimmer-osint-ctf-2026_writeup/">SWIMMER OSINT CTF 2026: Writeup</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ps-webllm_walkthrough/">PortSwigger: Web LLM attacks</a>
         </li>
       
         
@@ -1114,13 +2132,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/tsukuctf_2025_writeup/">TsukuCTF 2025 writeups</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Autopsy-tutorial-for-beginners/">Autopsy - Tutorial</a>
         </li>
       
     </ul>
@@ -1324,15 +2335,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1353,38 +2355,6 @@
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -1393,21 +2363,12 @@
     
     
     
-      
-        
-        
-
   
     
     
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -1438,6 +2399,33 @@
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1455,17 +2443,40 @@
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1511,16 +2522,16 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">cryptography</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">ai</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/portswigger/">portswigger</a>
       
     </div>
   </section>
@@ -1640,6 +2651,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -1654,6 +2677,34 @@
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/tsukuctf_2025_writeup/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1746336600"
+  data-df="ll"
+  
+>
+  May  4, 2025
+</time>
+
+              <h4 class="pt-0 my-2">TsukuCTF 2025 writeups</h4>
+              <div class="text-muted">
+                <p>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/imaginaryctf_2025_writeup/" class="post-preview card h-100">
@@ -1690,7 +2741,7 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
         </article>
       
         <article class="col">
-          <a href="/posts/Autopsy-tutorial-for-beginners/" class="post-preview card h-100">
+          <a href="/posts/wolvctf_2025_writeup/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1702,44 +2753,16 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
 
 <time
   
-  data-ts="1753254000"
+  data-ts="1743092100"
   data-df="ll"
   
 >
-  Jul 23, 2025
+  Mar 27, 2025
 </time>
 
-              <h4 class="pt-0 my-2">Autopsy - Tutorial</h4>
+              <h4 class="pt-0 my-2">WolvCTF 2025 writeups</h4>
               <div class="text-muted">
-                <p>This post consists of an article &quot;Autopsy - Tutorial for N00bs&quot;</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/picogym_forensics_easy_writeup/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1746682200"
-  data-df="ll"
-  
->
-  May  8, 2025
-</time>
-
-              <h4 class="pt-0 my-2">picoGym Forensics - Easy writeups</h4>
-              <div class="text-muted">
-                <p>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</p>
+                <p>This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.</p>
               </div>
             </div>
           </a>
@@ -1760,11 +2783,11 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
 
   
     <a
-      href="/posts/imaginaryctf_2025_writeup/"
+      href="/posts/ps-webllm_walkthrough/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>ImaginaryCTF 2025 Writeup</p>
+      <p>PortSwigger: Web LLM attacks</p>
     </a>
   
 
@@ -1787,7 +2810,7 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
   "
 >
   <p>©
-    <time>2025</time>
+    <time>2026</time>
 
     
       <a href="https://twitter.com/cyb3r_bo1">CYB3R BO1</a>.
@@ -2017,15 +3040,6 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -2046,38 +3060,6 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
     
     
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -2086,21 +3068,12 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
     
     
     
-      
-        
-        
-
   
     
     
     
     
       
-    
-  
-    
-    
-    
     
   
     
@@ -2131,6 +3104,33 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
     
     
     
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2148,17 +3148,40 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2204,16 +3227,16 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptography/">cryptography</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/aoc/">aoc</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/osint/">osint</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/steganography/">steganography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/reverse-engineering/">reverse-engineering</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">ai</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/portswigger/">portswigger</a>
       
     </div>
   </section>

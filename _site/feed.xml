@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-12-02T00:30:39+05:30</updated>
+  <updated>2026-01-20T13:53:57+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -13,21 +13,65 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 CYB3R BO1 </rights>
+  <rights> © 2026 CYB3R BO1 </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>TryHackMe Advent of Cyber 2025 - 1</title>
-    <link href="http://localhost:4000/posts/AoC_2025_walkthrough/" rel="alternate" type="text/html" title="TryHackMe Advent of Cyber 2025 - 1" />
-    <published>2025-12-01T23:00:00+05:30</published>
+    <title>SWIMMER OSINT CTF 2026: Writeup</title>
+    <link href="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" rel="alternate" type="text/html" title="SWIMMER OSINT CTF 2026: Writeup" />
+    <published>2026-01-20T13:00:00+05:30</published>
   
-    <updated>2025-12-02T00:23:33+05:30</updated>
+    <updated>2026-01-20T13:20:42+05:30</updated>
   
-    <id>http://localhost:4000/posts/AoC_2025_walkthrough/</id>
-    <content type="text/html" src="http://localhost:4000/posts/AoC_2025_walkthrough/" />
+    <id>http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="Others" />
+    
+  
+
+  <summary>TL;DR
+
+
+  Participated in SWIMMER OSINT CTF 2026 (hosted by DIVER OSINT CTF)
+  Team: 0$1N7_K1dd13$
+  Final rank: 200 / 688 teams
+  Solved: 23 / 29 challenges
+  Personally solved: 8 challenges
+  Focus areas: aviation OSINT, geo-location, archival research, Japanese media OSINT
+  Core tools: Google, Google Lens, OpenStreetMap, YouTube, UN Digital Library, Wikipedia
+
+
+Plus Ultra.
+
+
+
+Event Info
+
+Sw...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>PortSwigger: Web LLM attacks</title>
+    <link href="http://localhost:4000/posts/ps-webllm_walkthrough/" rel="alternate" type="text/html" title="PortSwigger: Web LLM attacks" />
+    <published>2025-12-02T12:00:00+05:30</published>
+  
+    <updated>2025-12-02T12:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/ps-webllm_walkthrough/</id>
+    <content type="text/html" src="http://localhost:4000/posts/ps-webllm_walkthrough/" />
     <author>
       <name>CYB3R BO1</name>
     </author>
@@ -36,41 +80,15 @@
     
     <category term="WalkThrough" />
     
-    <category term="THM" />
-    
-    <category term="AoC2025" />
+    <category term="PortSwigger" />
     
   
 
-  <summary>Linux CLI - Shells Bells
+  <summary>Introduction
 
+Large Language Models are increasingly embedded into web applications, creating new attack surfaces. These labs from PortSwigger demonstrate how LLM-powered features can be manipulated through prompt injection, output manipulation, and flawed trust assumptions.
 
-  TryHackMe Advent of Cyber 2025 Kick-Off (Day 1)
-
-
-Task 1: Introduction
-
-
-  Connect to the challenge machine. No additional actions required.
-
-
-Task 2: Introduction
-
-
-  
-    Which CLI command would you use to list a directory?
-
-    ls
-  
-  
-    What flag did you see inside of the McSkidy’s guide?
-
-    THM{learning-linux-cli}
-
-    Commands Used:
-
-      cd Guides
-  ls ...</summary>
+Using a flawed LLM, an attacker can access anything the LLM has access to, which includes APIs, user information etc., O...</summary>
 
   </entry>
 
@@ -157,32 +175,6 @@ Here are my writeups for the challenges I...</summary>
   
 
   <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>TsukuCTF 2025 writeups</title>
-    <link href="http://localhost:4000/posts/tsukuctf_2025_writeup/" rel="alternate" type="text/html" title="TsukuCTF 2025 writeups" />
-    <published>2025-05-04T11:00:00+05:30</published>
-  
-    <updated>2025-12-02T00:10:16+05:30</updated>
-  
-    <id>http://localhost:4000/posts/tsukuctf_2025_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/tsukuctf_2025_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="Others" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.</summary>
 
   </entry>
 
