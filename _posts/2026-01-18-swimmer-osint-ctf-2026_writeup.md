@@ -57,8 +57,8 @@ I competed in **0$1N7_K1dd13$** with *GregorSec, th3mujd11, Scorpius,* and *Codr
 | research_2025  | obsolete         | Archival Research              | UN Digital Library, Google         |
 | research_2025  | truck            | Geo + Video OSINT              | Google Maps, 11foot8.com           |
 | research_2025  | debris           | Geo-location                   | YouTube, Google Maps               |
-| tgt_rain       | rain_04_source2       | Reverse Image Search           | Google Lens, Wikipedia             |
-| tgt_rain       | rain_05_date        | Event Correlation              | LinkedIn, Image Analysis           |
+| tgt_rain       | rain_04_source2  | Reverse Image Search           | Google Lens, Wikipedia             |
+| tgt_rain       | rain_05_date     | Event Correlation              | LinkedIn, Image Analysis           |
 
 ---
 
@@ -212,9 +212,13 @@ Using road curvature and nearby buildings visible in the footage, I matched the 
 
 ---
 
+## tgt_rain
+
 ### **rain_04_source2**
 
 **Tools:** Google Lens, Wikipedia
+
+**Description**: Find the DOI of this image.
 
 <img src="/assets/img/posts/swimmerCTF2026/source2-1.png" alt="Archival image 1">
 
@@ -237,6 +241,8 @@ The DOI shown in the archival metadata:
 ### **rain_05_date**
 
 **Tools:** Google, LinkedIn, Image Analysis
+
+**Description**: Find the date when this picture was captured.
 
 <img src="/assets/img/posts/swimmerCTF2026/date.jpg" alt="Event banner">
 
