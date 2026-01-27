@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-20T13:53:57+05:30</updated>
+  <updated>2026-01-27T23:50:36+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,54 @@
 
   
   <entry>
+    <title>KnightCTF 2026: Writeup</title>
+    <link href="http://localhost:4000/posts/knightctf-2026_writeup/" rel="alternate" type="text/html" title="KnightCTF 2026: Writeup" />
+    <published>2026-01-27T23:50:00+05:30</published>
+  
+    <updated>2026-01-27T23:50:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/knightctf-2026_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/knightctf-2026_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="Others" />
+    
+  
+
+  <summary>TL;DR
+
+
+  Participated in KnightCTF 2026, hosted by the Knight Squad community
+  Solved challenges across Networking, Reverse Engineering, and PWN
+  Focus areas: PCAP analysis, WordPress exploitation, hash-based reversing, basic ROP
+  Core tools: Wireshark, Python, pwntools, IDA/Ghidra
+
+
+Plus Ultra.
+
+
+
+Event Info
+
+
+  CTFtime: https://ctftime.org/event/3053
+  Platform: https://2026.knightctf.com...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>SWIMMER OSINT CTF 2026: Writeup</title>
     <link href="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" rel="alternate" type="text/html" title="SWIMMER OSINT CTF 2026: Writeup" />
     <published>2026-01-20T13:00:00+05:30</published>
   
-    <updated>2026-01-20T13:20:42+05:30</updated>
+    <updated>2026-01-20T14:20:43+05:30</updated>
   
     <id>http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" />
@@ -149,32 +192,6 @@ Here are my writeups for the challenges I...</summary>
   
 
   <summary>This post consists of an article &amp;quot;Autopsy - Tutorial for N00bs&amp;quot;</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>picoGym Forensics - Easy writeups</title>
-    <link href="http://localhost:4000/posts/picogym_forensics_easy_writeup/" rel="alternate" type="text/html" title="picoGym Forensics - Easy writeups" />
-    <published>2025-05-08T11:00:00+05:30</published>
-  
-    <updated>2025-07-03T14:02:40+05:30</updated>
-  
-    <id>http://localhost:4000/posts/picogym_forensics_easy_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/picogym_forensics_easy_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="PicoCTF" />
-    
-  
-
-  <summary>This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.</summary>
 
   </entry>
 
