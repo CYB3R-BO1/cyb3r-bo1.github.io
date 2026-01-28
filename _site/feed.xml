@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-27T23:50:36+05:30</updated>
+  <updated>2026-01-28T21:33:58+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>0xL4ugh 2026: Writeup</title>
+    <link href="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" rel="alternate" type="text/html" title="0xL4ugh 2026: Writeup" />
+    <published>2026-01-28T21:20:00+05:30</published>
+  
+    <updated>2026-01-28T21:20:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/</id>
+    <content type="text/html" src="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="CTF" />
+    
+    <category term="Others" />
+    
+  
+
+  <summary>TL;DR
+
+
+  Participated in 0xL4ugh CTF v5 2026, hosted by 0xL4ugh
+  Team rank: 19 / 1732
+  Personally solved 1 DFIR challenge
+  Investigation focused on Windows triage analysis
+  Key techniques: browser forensics, Sysmon analysis, persistence detection, timeline reconstruction
+  Identified full attack chain from initial download → execution → C2 → persistence
+
+
+Plus Ultra.
+
+
+
+Event Info
+
+
+  CTFt...</summary>
+
+  </entry>
 
   
   <entry>
@@ -168,30 +212,6 @@ Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under 
 I focused on Reverse Engineering and Pwn challenges. Since I’m still new to this domain, I was thrilled to solve 9 challenges (including some Misc).
 
 Here are my writeups for the challenges I...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Autopsy - Tutorial</title>
-    <link href="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" rel="alternate" type="text/html" title="Autopsy - Tutorial" />
-    <published>2025-07-23T12:30:00+05:30</published>
-  
-    <updated>2025-12-02T00:10:16+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Autopsy-tutorial-for-beginners/</id>
-    <content type="text/html" src="http://localhost:4000/posts/Autopsy-tutorial-for-beginners/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This post consists of an article &amp;quot;Autopsy - Tutorial for N00bs&amp;quot;</summary>
 
   </entry>
 
