@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-28T21:33:58+05:30</updated>
+  <updated>2026-01-31T16:37:45+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>Setting Up Kali Linux on VirtualBox</title>
+    <link href="http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/" rel="alternate" type="text/html" title="Setting Up Kali Linux on VirtualBox" />
+    <published>2026-01-31T15:30:00+05:30</published>
+  
+    <updated>2026-01-31T15:30:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/" />
+    <author>
+      <name>CYB3R BO1</name>
+    </author>
+
+  
+    
+    <category term="Walkthrough" />
+    
+  
+
+  <summary>This post consists of tutorial to setup Kali Linux on VirtualBox&amp;quot;</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>0xL4ugh 2026: Writeup</title>
     <link href="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" rel="alternate" type="text/html" title="0xL4ugh 2026: Writeup" />
-    <published>2026-01-28T21:20:00+05:30</published>
+    <published>2026-01-28T21:30:00+05:30</published>
   
-    <updated>2026-01-28T21:20:00+05:30</updated>
+    <updated>2026-01-28T21:30:00+05:30</updated>
   
     <id>http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" />
@@ -176,42 +200,6 @@ Sw...</summary>
 Large Language Models are increasingly embedded into web applications, creating new attack surfaces. These labs from PortSwigger demonstrate how LLM-powered features can be manipulated through prompt injection, output manipulation, and flawed trust assumptions.
 
 Using a flawed LLM, an attacker can access anything the LLM has access to, which includes APIs, user information etc., O...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>ImaginaryCTF 2025 Writeup</title>
-    <link href="http://localhost:4000/posts/imaginaryctf_2025_writeup/" rel="alternate" type="text/html" title="ImaginaryCTF 2025 Writeup" />
-    <published>2025-09-09T05:30:00+05:30</published>
-  
-    <updated>2025-12-02T00:10:16+05:30</updated>
-  
-    <id>http://localhost:4000/posts/imaginaryctf_2025_writeup/</id>
-    <content type="text/html" src="http://localhost:4000/posts/imaginaryctf_2025_writeup/" />
-    <author>
-      <name>CYB3R BO1</name>
-    </author>
-
-  
-    
-    <category term="CTF" />
-    
-    <category term="Others" />
-    
-  
-
-  <summary>ImaginaryCTF 2025 Writeup
-
-
-
-Introduction
-
-Hello Players! I’m CYB3R-BO1, a CTF enthusiast. As part of HackerTroupe under the handle LUZ1LF3R, we competed in ImaginaryCTF 2025, securing the 215th position.
-
-I focused on Reverse Engineering and Pwn challenges. Since I’m still new to this domain, I was thrilled to solve 9 challenges (including some Misc).
-
-Here are my writeups for the challenges I...</summary>
 
   </entry>
 

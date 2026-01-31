@@ -1,11 +1,28 @@
 [
   
   {
+    "title": "Setting Up Kali Linux on VirtualBox",
+    "url": "/posts/Setting_Up_Kali_Linux_on_VirtualBox/",
+    "categories": "Walkthrough",
+    "tags": "cybersecurity, walkthrough",
+    "date": "2026-01-31 15:30:00 +0530",
+    
+
+
+
+
+
+    
+    "snippet": "This guide walks through two ways to set up Kali Linux on VirtualBox:  Using the Pre-built Virtual Machine (Recommended)  Using the Kali Linux ISO (Manual Installation)I’ll also cover Guest Additio...",
+    "content": "This guide walks through two ways to set up Kali Linux on VirtualBox:  Using the Pre-built Virtual Machine (Recommended)  Using the Kali Linux ISO (Manual Installation)I’ll also cover Guest Additions installation for better performance and full-screen support.TL;DR  If you want fastest setup → use Pre-built Kali VM  If you want to learn Linux installation internals → use ISO  Always install Guest Additions for:          Full-screen support      Better resolution      Smoother performance      Jump to section:  Pre-built VM Setup  Install Guest Additions  ISO InstallationRequirements  A system with Virtualization enabled (Intel VT-x / AMD-V)  At least 8 GB RAM recommended (4 GB minimum)  VirtualBox installed on host OSMethod 1: Setting Up Kali Linux Using Pre-built Virtual MachineThis is the recommended approach for most users.Step 1: Download Kali Linux (Pre-built VM)Download Kali Linux for VirtualBox from the official site:  https://www.kali.org/get-kali/#kali-virtual-machinesDirect download (example version):  https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7zWhy Pre-built VM?  Minimal setup  No manual partitioning  Ready-to-use environmentStep 2: Install VirtualBoxDownload and install VirtualBox based on your host OS:  https://www.virtualbox.org/wiki/DownloadsInstall VirtualBox Platform Package (Extension Pack is optional but recommended).Step 3: Extract Kali VM FilesExtract the downloaded .7z file.You’ll see two important files:  .vdi → Virtual Disk Image (the actual OS disk)  .vbox → VirtualBox Machine Definition (VM configuration)Step 4: Import Kali into VirtualBox  Open VirtualBox  Click Machine → Add  Select the .vbox file  Kali Linux will appear in your VM listStep 5: Recommended VM Settings (Before Boot)Select the Kali VM → SettingsGeneral → Advanced  Disable Drag’n’Drop  Disable Clipboard Sharing (optional, security hygiene)System → Processor  Allocate as many CPUs as your system allows (without starving host OS)Display → Screen  Set Video Memory to maximumStorage  Ensure disk type is Dynamically allocated          This prevents wasting unused disk space      Network (Optional)  If you face network issues later:          Change Adapter Type      Switch between NAT and Bridged      Step 6: Start Kali LinuxStart the VM.Default credentials:username: kalipassword: kaliInstalling VirtualBox Guest AdditionsWithout Guest Additions, you’ll face:  Low resolution  No full-screen mode  Laggy UIStep 1: Update Kalisudo apt updatesudo apt upgrade -ysudo rebootStep 2: Install Linux Headerssudo apt install -y linux-headers-$(uname -r)Step 3: Insert Guest Additions CDFrom the VirtualBox menu:Devices →InsertGuestAdditionsCDImageStep 4: Copy Guest Additions Files  Open File Manager (Thunar)  Go to Devices → VBox_GAs  Copy all files  Paste them into a directory (e.g., ~/Downloads/VBoxGA)Step 5: Install Guest Additionscd ~/Downloads/VBoxGAls *.runsudochmod +x VBoxLinuxAdditions.runsudo ./VBoxLinuxAdditions.runsudo rebootAfter reboot, enable Full Screen Mode.Kali Linux setup complete.Method 2: Setting Up Kali Linux Using Kali Linux ISOThis method is slower, but educational.Step 1: Download VirtualBox  https://www.virtualbox.org/wiki/DownloadsStep 2: Download Kali Linux Installer ISO  https://www.kali.org/get-kali/#kali-installer-imagesDownload Installer ISO (not Live).Step 3: Create a New Virtual Machine  Open VirtualBox → New  Name: Kali Linux  Type: Linux  Version: Debian (64-bit)  Select downloaded .isoStep 4: Allocate Resources  RAM: 4-8 GB  CPUs: 2-4  Disk: Dynamically allocated, ≥ 40 GBStep 5: Start Installation  Click Start  Select Graphical Install  Choose:          Language      Country      Keyboard        Set:          Hostname      Username      Password      Step 6: Disk &amp; Software Selection  Accept default partitioning  Choose Yes to write changes  Leave software selection default  Continue installationStep 7: Finish InstallationOnce complete:  Reboot  Remove ISO  Log in with your credentialsInstall Guest Additions using the same steps as aboveCommon Issues &amp; Fixes  Black screen / low resolution          Install Guest Additions        No internet          Switch network adapter to NAT        Debian (64-bit) not showing          Enable virtualization in BIOS      Final Notes  Use Pre-built VM unless you want to learn Linux installation  Always update Kali after first bootYour Kali Linux is now ready to use.Plus Ultra."
+  },
+  
+  {
     "title": "0xL4ugh 2026: Writeup",
     "url": "/posts/0xl4ughCTF_v5_2026_writeup/",
     "categories": "CTF, Others",
     "tags": "ctf, writeups, cybersecurity, dfir, forensics",
-    "date": "2026-01-28 21:20:00 +0530",
+    "date": "2026-01-28 21:30:00 +0530",
     
 
 
