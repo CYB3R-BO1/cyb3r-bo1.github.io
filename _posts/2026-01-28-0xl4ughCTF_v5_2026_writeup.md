@@ -1,8 +1,8 @@
 ---
-title: "0xL4ugh 2026: Writeup"
+title: "0xL4ugh CTF 2026: Writeup"
 date: 2026-01-28 21:30:00 +0530
 categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, dfir, forensics, ]
+tags: [ctf, writeups, cybersecurity, dfir, forensics]
 excerpt: "A writeup for 0xL4ughCTF v5 2026 challenges."
 ---
 

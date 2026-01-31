@@ -1,6 +1,6 @@
 ---
 title: Setting Up Kali Linux on VirtualBox
-date: 2026-01-31 15:30:00 +0530
+date: 2026-01-31 16:40:00 +0530
 categories: [Walkthrough]
 tags: [cybersecurity, walkthrough]     # TAG names should always be lowercase
 description: This post consists walkthrough to setup Kali Linux on VirtualBox"
