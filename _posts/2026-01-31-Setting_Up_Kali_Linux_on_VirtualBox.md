@@ -3,7 +3,7 @@ title: Setting Up Kali Linux on VirtualBox
 date: 2026-01-31 16:40:00 +0530
 categories: [Walkthrough]
 tags: [cybersecurity, walkthrough]     # TAG names should always be lowercase
-description: This post consists walkthrough to setup Kali Linux on VirtualBox"
+description: This post consists walkthrough to setup Kali Linux on VirtualBox
 ---
 
 This guide walks through **two ways** to set up Kali Linux on VirtualBox:
