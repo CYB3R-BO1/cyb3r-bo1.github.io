@@ -17,8 +17,8 @@ I’ll also cover **Guest Additions installation** for better performance and fu
 
 ## TL;DR
 
-- If you want **fastest setup** → use **Pre-built Kali VM**
-- If you want to **learn Linux installation internals** → use **ISO**
+- If you want **fastest setup** -> use **Pre-built Kali VM**
+- If you want to **learn Linux installation internals** -> use **ISO**
 - Always install **Guest Additions** for:
     - Full-screen support
     - Better resolution
@@ -48,11 +48,11 @@ This is the **recommended approach** for most users.
 
 Download Kali Linux for VirtualBox from the official site:
 
-- https://www.kali.org/get-kali/#kali-virtual-machines
+- (https://www.kali.org/get-kali/#kali-virtual-machines)[https://www.kali.org/get-kali/#kali-virtual-machines]
 
 Direct download (example version):
 
-- https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z
+- (https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z)[https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z]
 
 **Why Pre-built VM?**
 
@@ -66,7 +66,7 @@ Direct download (example version):
 
 Download and install VirtualBox based on your host OS:
 
-- https://www.virtualbox.org/wiki/Downloads
+- (https://www.virtualbox.org/wiki/Downloads)[https://www.virtualbox.org/wiki/Downloads]
 
 Install **VirtualBox Platform Package** (Extension Pack is optional but recommended).
 
@@ -78,15 +78,15 @@ Extract the downloaded `.7z` file.
 
 You’ll see two important files:
 
-- **`.vdi`** → Virtual Disk Image (the actual OS disk)
-- **`.vbox`** → VirtualBox Machine Definition (VM configuration)
+- **`.vdi`** -> Virtual Disk Image (the actual OS disk)
+- **`.vbox`** -> VirtualBox Machine Definition (VM configuration)
 
 ---
 
 ### Step 4: Import Kali into VirtualBox
 
 1. Open **VirtualBox**
-2. Click **Machine → Add**
+2. Click **Machine -> Add**
 3. Select the `.vbox` file
 4. Kali Linux will appear in your VM list
 
@@ -94,18 +94,18 @@ You’ll see two important files:
 
 ### Step 5: Recommended VM Settings (Before Boot)
 
-Select the Kali VM → **Settings**
+Select the Kali VM -> **Settings**
 
-#### General → Advanced
+#### General -> Advanced
 
 - Disable **Drag’n’Drop**
 - Disable **Clipboard Sharing** (optional, security hygiene)
 
-#### System → Processor
+#### System -> Processor
 
 - Allocate **as many CPUs as your system allows** (without starving host OS)
 
-#### Display → Screen
+#### Display -> Screen
 
 - Set **Video Memory to maximum**
 
@@ -166,7 +166,7 @@ sudo apt install -y linux-headers-$(uname -r)
 From the VirtualBox menu:
 
 ```
-Devices →InsertGuestAdditionsCDImage
+Devices -> InsertGuestAdditionsCDImage
 ```
 
 ---
@@ -174,7 +174,7 @@ Devices →InsertGuestAdditionsCDImage
 ### Step 4: Copy Guest Additions Files
 
 1. Open **File Manager (Thunar)**
-2. Go to **Devices → VBox_GAs**
+2. Go to **Devices -> VBox_GAs**
 3. Copy all files
 4. Paste them into a directory (e.g., `~/Downloads/VBoxGA`)
 
@@ -202,13 +202,13 @@ This method is **slower**, but educational.
 
 ### Step 1: Download VirtualBox
 
-- https://www.virtualbox.org/wiki/Downloads
+- (https://www.virtualbox.org/wiki/Downloads)[https://www.virtualbox.org/wiki/Downloads]
 
 ---
 
 ### Step 2: Download Kali Linux Installer ISO
 
-- https://www.kali.org/get-kali/#kali-installer-images
+- (https://www.kali.org/get-kali/#kali-installer-images)[https://www.kali.org/get-kali/#kali-installer-images]
 
 Download **Installer ISO** (not Live).
 
@@ -216,7 +216,7 @@ Download **Installer ISO** (not Live).
 
 ### Step 3: Create a New Virtual Machine
 
-1. Open VirtualBox → **New**
+1. Open VirtualBox -> **New**
 2. Name: `Kali Linux`
 3. Type: `Linux`
 4. Version: `Debian (64-bit)`
