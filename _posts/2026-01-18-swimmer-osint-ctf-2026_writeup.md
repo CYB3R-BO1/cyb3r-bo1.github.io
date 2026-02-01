@@ -1,9 +1,9 @@
 ---
-title: "SWIMMER OSINT CTF 2026: Writeup"
+title: SWIMMER OSINT CTF 2026 - Writeup
 date: 2026-01-20 13:00:00 +0530
 categories: [CTF, Others]
 tags: [ctf, writeups, cybersecurity, osint]
-excerpt: "A writeup for SWIMMER OSINT CTF 2026 challenges."
+description: A writeup for SWIMMER OSINT CTF 2026 challenges.
 ---
 
 ## TL;DR

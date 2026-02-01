@@ -48,11 +48,11 @@ This is the **recommended approach** for most users.
 
 Download Kali Linux for VirtualBox from the official site:
 
-- (https://www.kali.org/get-kali/#kali-virtual-machines)[https://www.kali.org/get-kali/#kali-virtual-machines]
+- [https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)
 
 Direct download (example version):
 
-- (https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z)[https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z]
+- [https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z](https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z)
 
 **Why Pre-built VM?**
 
@@ -66,7 +66,7 @@ Direct download (example version):
 
 Download and install VirtualBox based on your host OS:
 
-- (https://www.virtualbox.org/wiki/Downloads)[https://www.virtualbox.org/wiki/Downloads]
+- [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 Install **VirtualBox Platform Package** (Extension Pack is optional but recommended).
 
@@ -202,13 +202,13 @@ This method is **slower**, but educational.
 
 ### Step 1: Download VirtualBox
 
-- (https://www.virtualbox.org/wiki/Downloads)[https://www.virtualbox.org/wiki/Downloads]
+- [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 ---
 
 ### Step 2: Download Kali Linux Installer ISO
 
-- (https://www.kali.org/get-kali/#kali-installer-images)[https://www.kali.org/get-kali/#kali-installer-images]
+- [https://www.kali.org/get-kali/#kali-installer-images](https://www.kali.org/get-kali/#kali-installer-images)
 
 Download **Installer ISO** (not Live).
 

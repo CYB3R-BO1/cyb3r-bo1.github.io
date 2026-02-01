@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>CYB3R_BO1</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-31T16:37:45+05:30</updated>
+  <updated>2026-02-01T18:56:18+05:30</updated>
   <author>
     <name>CYB3R BO1</name>
     <uri>http://localhost:4000/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Setting Up Kali Linux on VirtualBox</title>
     <link href="http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/" rel="alternate" type="text/html" title="Setting Up Kali Linux on VirtualBox" />
-    <published>2026-01-31T15:30:00+05:30</published>
+    <published>2026-01-31T16:40:00+05:30</published>
   
-    <updated>2026-01-31T15:30:00+05:30</updated>
+    <updated>2026-01-31T16:52:04+05:30</updated>
   
     <id>http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/</id>
     <content type="text/html" src="http://localhost:4000/posts/Setting_Up_Kali_Linux_on_VirtualBox/" />
@@ -38,17 +38,17 @@
     
   
 
-  <summary>This post consists of tutorial to setup Kali Linux on VirtualBox&amp;quot;</summary>
+  <summary>This post consists walkthrough to setup Kali Linux on VirtualBox</summary>
 
   </entry>
 
   
   <entry>
-    <title>0xL4ugh 2026: Writeup</title>
-    <link href="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" rel="alternate" type="text/html" title="0xL4ugh 2026: Writeup" />
+    <title>0xL4ugh CTF v5 2026 - Writeup</title>
+    <link href="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" rel="alternate" type="text/html" title="0xL4ugh CTF v5 2026 - Writeup" />
     <published>2026-01-28T21:30:00+05:30</published>
   
-    <updated>2026-01-28T21:30:00+05:30</updated>
+    <updated>2026-01-31T16:41:55+05:30</updated>
   
     <id>http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/</id>
     <content type="text/html" src="http://localhost:4000/posts/0xl4ughCTF_v5_2026_writeup/" />
@@ -64,32 +64,14 @@
     
   
 
-  <summary>TL;DR
-
-
-  Participated in 0xL4ugh CTF v5 2026, hosted by 0xL4ugh
-  Team rank: 19 / 1732
-  Personally solved 1 DFIR challenge
-  Investigation focused on Windows triage analysis
-  Key techniques: browser forensics, Sysmon analysis, persistence detection, timeline reconstruction
-  Identified full attack chain from initial download → execution → C2 → persistence
-
-
-Plus Ultra.
-
-
-
-Event Info
-
-
-  CTFt...</summary>
+  <summary>A writeup for 0xL4ughCTF v5 2026 challenges.</summary>
 
   </entry>
 
   
   <entry>
-    <title>KnightCTF 2026: Writeup</title>
-    <link href="http://localhost:4000/posts/knightctf-2026_writeup/" rel="alternate" type="text/html" title="KnightCTF 2026: Writeup" />
+    <title>KnightCTF 2026 - Writeup</title>
+    <link href="http://localhost:4000/posts/knightctf-2026_writeup/" rel="alternate" type="text/html" title="KnightCTF 2026 - Writeup" />
     <published>2026-01-27T23:50:00+05:30</published>
   
     <updated>2026-01-27T23:50:00+05:30</updated>
@@ -108,31 +90,14 @@ Event Info
     
   
 
-  <summary>TL;DR
-
-
-  Participated in KnightCTF 2026, hosted by the Knight Squad community
-  Solved challenges across Networking, Reverse Engineering, and PWN
-  Focus areas: PCAP analysis, WordPress exploitation, hash-based reversing, basic ROP
-  Core tools: Wireshark, Python, pwntools, IDA/Ghidra
-
-
-Plus Ultra.
-
-
-
-Event Info
-
-
-  CTFtime: https://ctftime.org/event/3053
-  Platform: https://2026.knightctf.com...</summary>
+  <summary>A writeup for KnightCTF 2026 challenges.</summary>
 
   </entry>
 
   
   <entry>
-    <title>SWIMMER OSINT CTF 2026: Writeup</title>
-    <link href="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" rel="alternate" type="text/html" title="SWIMMER OSINT CTF 2026: Writeup" />
+    <title>SWIMMER OSINT CTF 2026 - Writeup</title>
+    <link href="http://localhost:4000/posts/swimmer-osint-ctf-2026_writeup/" rel="alternate" type="text/html" title="SWIMMER OSINT CTF 2026 - Writeup" />
     <published>2026-01-20T13:00:00+05:30</published>
   
     <updated>2026-01-20T14:20:43+05:30</updated>
@@ -151,32 +116,14 @@ Event Info
     
   
 
-  <summary>TL;DR
-
-
-  Participated in SWIMMER OSINT CTF 2026 (hosted by DIVER OSINT CTF)
-  Team: 0$1N7_K1dd13$
-  Final rank: 200 / 688 teams
-  Solved: 23 / 29 challenges
-  Personally solved: 8 challenges
-  Focus areas: aviation OSINT, geo-location, archival research, Japanese media OSINT
-  Core tools: Google, Google Lens, OpenStreetMap, YouTube, UN Digital Library, Wikipedia
-
-
-Plus Ultra.
-
-
-
-Event Info
-
-Sw...</summary>
+  <summary>A writeup for SWIMMER OSINT CTF 2026 challenges.</summary>
 
   </entry>
 
   
   <entry>
-    <title>PortSwigger: Web LLM attacks</title>
-    <link href="http://localhost:4000/posts/ps-webllm_walkthrough/" rel="alternate" type="text/html" title="PortSwigger: Web LLM attacks" />
+    <title>PortSwigger - Web LLM attacks</title>
+    <link href="http://localhost:4000/posts/ps-webllm_walkthrough/" rel="alternate" type="text/html" title="PortSwigger - Web LLM attacks" />
     <published>2025-12-02T12:00:00+05:30</published>
   
     <updated>2025-12-02T12:00:00+05:30</updated>
@@ -195,11 +142,7 @@ Sw...</summary>
     
   
 
-  <summary>Introduction
-
-Large Language Models are increasingly embedded into web applications, creating new attack surfaces. These labs from PortSwigger demonstrate how LLM-powered features can be manipulated through prompt injection, output manipulation, and flawed trust assumptions.
-
-Using a flawed LLM, an attacker can access anything the LLM has access to, which includes APIs, user information etc., O...</summary>
+  <summary>A Walkthrough of PortSwigger&amp;#39;s Web LLM attacks Labs</summary>
 
   </entry>
 
