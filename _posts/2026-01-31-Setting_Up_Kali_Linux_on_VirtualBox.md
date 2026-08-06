@@ -185,7 +185,7 @@ Devices -> InsertGuestAdditionsCDImage
 ```bash
 cd ~/Downloads/VBoxGA
 ls *.run
-sudochmod +x VBoxLinuxAdditions.run
+sudo chmod +x VBoxLinuxAdditions.run
 sudo ./VBoxLinuxAdditions.run
 sudo reboot
 ```

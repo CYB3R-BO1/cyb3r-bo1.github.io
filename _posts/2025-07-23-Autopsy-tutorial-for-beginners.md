@@ -138,7 +138,7 @@ This will successfully add the image partitions which makes them ready to analyz
 
 ![](/assets/img/posts/Forensics/Autopsy/14.png)
 
-Now we are ready to anlayze, let’s start analysing from the top which is _disk.flag.img.disk_.
+Now we are ready to analyze, let's start analysing from the top which is _disk.flag.img.disk_.
 
 ![](/assets/img/posts/Forensics/Autopsy/15.png)
 

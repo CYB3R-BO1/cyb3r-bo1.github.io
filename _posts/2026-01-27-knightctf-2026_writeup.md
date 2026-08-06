@@ -13,7 +13,7 @@ description: A writeup for KnightCTF 2026 challenges.
 * Focus areas: PCAP analysis, WordPress exploitation, hash-based reversing, basic ROP
 * Core tools: Wireshark, Python, pwntools, IDA/Ghidra
 
-Plus Ultra.
+_Plus Ultra._
 
 ---
 

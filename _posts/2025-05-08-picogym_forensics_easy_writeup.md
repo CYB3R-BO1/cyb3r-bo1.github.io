@@ -99,7 +99,7 @@ I got the flag!
 
 **Explanation:**
 
-After launcing the instance, we will be provided with a custom-port SSH login command and a password. Let's try to connect to the shell using the given command and enter the password. You will be connected to the shell.
+After launching the instance, we will be provided with a custom-port SSH login command and a password. Let's try to connect to the shell using the given command and enter the password. You will be connected to the shell.
 
 After successfully connecting, we will be entering a challenge shell. Let's try to check what are its contents using - ls command. It returns the following output:
 
@@ -110,7 +110,7 @@ checksum.txt    decrypt.sh  files
 After checking each of them using file command, it turns out:
  - checksum.txt is a text file
  - decrypt.sh is a shell script
- - files is a directory consisting of mutiple files.
+ - files is a directory consisting of multiple files.
 
 From the description of the challenge, we can understand that - the author says they are many fake flag, so to keep track of the real flag, he provides the SHA-256 hash of the real flag file and a decrypt file. So, what we can do is compare the SHA-256 hash of all the files in the - files directory with the hash provided in the checksum.txt.
 
@@ -150,7 +150,7 @@ I got the flag!
 
 **Explanation:**
 
-After launcing the instance, you will be provided with custom-port SSH command and password. Connect to the shell
+After launching the instance, you will be provided with custom-port SSH command and password. Connect to the shell
 
 After connecting, you will enter into the shell and a QR will be given. By using the - ls command in the current directory, you can see there is a file called flag.png. It looks like flag.png is the QR code. Now lets analyze the QR code using the below command.
 
@@ -218,7 +218,7 @@ I got the flag!
 
 ![Information](/assets/img/posts/picoGym-Forensics/Information.png)
 
-**Explanantion:**
+**Explanation:**
 
 So they have given us a file - cat.jpg saying files can be changed in a secret way.
 

@@ -1,7 +1,7 @@
 ---
 title: PortSwigger - Web LLM attacks
 date: 2025-12-02 12:00:00 +0530
-categories: [WalkThrough, PortSwigger]
+categories: [Walkthrough, PortSwigger]
 tags: [walkthrough, cybersecurity, portswigger, ai]
 description: A Walkthrough of PortSwigger's Web LLM attacks Labs
 ---

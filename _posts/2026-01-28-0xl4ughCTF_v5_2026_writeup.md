@@ -24,7 +24,7 @@ Plus Ultra.
 * **CTFtime:** [https://ctftime.org/event/3024](https://ctftime.org/event/3024)
 * **Platform:** [https://ctf.0xl4ugh.com/](https://ctf.0xl4ugh.com/)
 
-I participated during the weekend of **23 January 2025** with my teammates from **$cr1pt_K1dd13$**.
+I participated in this CTF during the weekend of **23 January 2026** with my teammates from **\$cr1pt_K1dd13\$**.
 Our team placed **19th out of 1732 teams**.
 
 <div style="display: flex; gap: 40px; align-items: stretch;">

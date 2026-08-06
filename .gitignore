@@ -7,6 +7,9 @@ Gemfile.lock
 .jekyll-cache
 .jekyll-metadata
 
+# Jekyll build output (built and deployed fresh by CI)
+_site
+
 # RubyGems
 *.gem
 
