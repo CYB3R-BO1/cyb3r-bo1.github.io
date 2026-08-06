@@ -203,6 +203,7 @@ exclude:
   - tools
   - README.md
   - LICENSE
+  - WRITEUP_TEMPLATE.md
   - purgecss.js
   - rollup.config.js
   - "package*.json"
