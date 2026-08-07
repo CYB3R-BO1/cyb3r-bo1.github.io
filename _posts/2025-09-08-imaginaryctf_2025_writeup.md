@@ -1,12 +1,11 @@
 ---
 title: ImaginaryCTF 2025 Writeup
 date: 2025-09-09 00:00:00 +0000
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, pwn, reverse-engineering]
+categories: [CTF]
+tags: [pwn, reverse-engineering]
 description: A writeup for ImaginaryCTF 2025 challenges.
 ---
 
-# **ImaginaryCTF 2025 Writeup**
 
 ![ImaginaryCTF-2025](/assets/img/posts/imaginaryCTF/imaginaryCTF.png)
 

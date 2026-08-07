@@ -2,11 +2,10 @@
 title: Autopsy - Tutorial 
 date: 2025-07-23 12:30:00 +0530
 categories: [Tutorial]
-tags: [cybersecurity, forensics]     # TAG names should always be lowercase
+tags: [forensics]
 description: This post consists of an article "Autopsy - Tutorial for N00bs"
 ---
 
-# **Autopsy: Tutorial for N00bs**
 
 ## What is Autopsy?
 
@@ -150,7 +149,7 @@ You can search for whatever you want (you need to wait some time as searching th
 
 ![](/assets/img/posts/Forensics/Autopsy/17.png)
 
-We can find few files named — _clock.txt_, _sroot.txt_ etc., after clicking on Ascii and checking the contents, we can file useful info in the content of file.txt.
+We can find few files named _clock.txt_, _sroot.txt_ etc., after clicking on Ascii and checking the contents, we can file useful info in the content of file.txt.
 
 ![](/assets/img/posts/Forensics/Autopsy/18.png)
 

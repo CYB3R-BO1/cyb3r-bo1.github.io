@@ -1,8 +1,8 @@
 ---
 title: BITSCTF 2026 - Writeup
 date: 2026-02-25 21:30:00 +0530
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, reverse-engineering, pwn, cryptography, forensics, web, networking]
+categories: [CTF]
+tags: [reverse-engineering, pwn, cryptography, forensics, web, networking]
 description: A writeup for BITSCTF 2026 challenges.
 ---
 
@@ -235,16 +235,16 @@ while True:
 
 #### Writeup: 
 
-Vulnerability: Classic buffer overflow — main reads 0x200 bytes into a 0x100-byte stack buffer via read(0, buf, 0x200).
+Vulnerability: Classic buffer overflow. Main reads 0x200 bytes into a 0x100-byte stack buffer via read(0, buf, 0x200).
 
 The "gap": There's a massive address gap between .text (0x600000) and the writable .data/.bss (0xc00000). The binary has almost no gadgets (only read is imported, ~52 gadgets total), No PIE, No canary, NX enabled, Partial RELRO.
 
 Exploit technique: Stack Pivot + Partial GOT Overwrite + SROP
 
-Stage 0 — Overflow the stack to pivot `rbp` to 0xc00300 (writable BSS), return to MAIN_LEA which re-calls read using the pivoted frame
-Stage 1 — Write a leave/ret chain at 0xc00300 and /bin/sh\0 at 0xc003f0
-Stage 1.5 — Write the SROP trigger chain + sigreturn frame at 0xc00100
-Stage 2 — Send a single byte `\x8f` to partially overwrite `read@GOT`'s LSB (0x80 → 0x8f), turning it into a bare syscall gadget in libc. This triggers the SROP chain: rax=0xf (via `lea rax,[rbp-0x100]` with `rbp=0x10f`) → `syscall` → `rt_sigreturn` → `execve("/bin/sh", 0, 0)`
+Stage 0: Overflow the stack to pivot `rbp` to 0xc00300 (writable BSS), return to MAIN_LEA which re-calls read using the pivoted frame
+Stage 1: Write a leave/ret chain at 0xc00300 and /bin/sh\0 at 0xc003f0
+Stage 1.5: Write the SROP trigger chain + sigreturn frame at 0xc00100
+Stage 2: Send a single byte `\x8f` to partially overwrite `read@GOT`'s LSB (0x80 → 0x8f), turning it into a bare syscall gadget in libc. This triggers the SROP chain: rax=0xf (via `lea rax,[rbp-0x100]` with `rbp=0x10f`) → `syscall` → `rt_sigreturn` → `execve("/bin/sh", 0, 0)`
 
 ```python
 #!/usr/bin/env python3

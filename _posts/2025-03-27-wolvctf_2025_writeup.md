@@ -1,12 +1,11 @@
 ---
 title: WolvCTF 2025 writeups
 date: 2025-03-27 21:45:00 +0530
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, forensics, reverse-engineering, pwn, cryptography]     # TAG names should always be lowercase
+categories: [CTF]
+tags: [forensics, reverse-engineering, pwn, cryptography]
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in WolvCTF 2025.
 ---
 
-# **WolvCTF 2025**
 
 ## **About WolvCTF:** 
 
@@ -14,7 +13,7 @@ WolvCTF is an annual CTF hosted by WolvSec.
 
 WolvSec is a cybersecurity/hacking club at the University of Michigan. The club is composed of undergrads, graduate students, alumni, university staff, and local industry professionals who are all focused on creating a fun, friendly, collaborative learning environment for cybersecurity.
 
-WolvCTF 2025 is consists of challenges ranging from beginner to hard in difficulty and topics like RevEng, Forensics, OSINT, Web Exploit, Cryptography, Binary Exploit and Misc. The event was conducted online from Sat, 22 March 2025, 04:30 IST — Mon, 24 March 2025, 04:30 IST.
+WolvCTF 2025 is consists of challenges ranging from beginner to hard in difficulty and topics like RevEng, Forensics, OSINT, Web Exploit, Cryptography, Binary Exploit and Misc. The event was conducted online from Sat, 22 March 2025, 04:30 IST to Mon, 24 March 2025, 04:30 IST.
 
 This is their CTF webpage - [https://wolvctf.io/](https://wolvctf.io/)
 
@@ -324,7 +323,7 @@ We got the flag!
 ![EtTuCaesar - Crypto](/assets/img/posts/wolvCTF2025/EtTuCaear_info.png)
 
 **Hints:**
-- A Caesar salad isn’t complete without a good toss—maybe try unscrambling it from different angles?
+- A Caesar salad isn’t complete without a good toss. Maybe try unscrambling it from different angles?
 - What if I put the note in the shape of a square?
 
 **Explanation:**
@@ -587,4 +586,4 @@ Overall, WolvCTF 2025 was an amazing experience! I learned a lot about forensics
 
 Big shoutout to my team, WolvSec, for the teamwork and support! Huge thanks to the organizers of WolvCTF 2025 for putting together such an exciting competition.
 
-If you found this writeup helpful or have any thoughts, feel free to reach out—let’s connect! Looking forward to the next CTF! 🚀
+If you found this writeup helpful or have any thoughts, feel free to reach out and let’s connect! Looking forward to the next CTF! 🚀

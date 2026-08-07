@@ -4,21 +4,22 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# **About**
+# About
 
-I’m CYB3R BO1, a cybersecurity researcher and CTF practitioner. My work revolves around studying offensive and defensive security techniques, building tooling, and analyzing how systems break—and how they can be made resilient.
+Hi, I'm **CYB3R BO1**, a security researcher focused on understanding how modern software works and breaks.
 
-# **Focus Areas**
+My interests currently center on **AI Security** and **Application Security**, though you'll occasionally find work involving reverse engineering, exploit development, digital forensics, and other areas that help me better understand complex systems.
 
-Web and Network Security — Vulnerability analysis, exploitation, and protocol behavior.
-Reverse Engineering and Exploit Development — Understanding binaries, debugging, and developing practical exploits.
-Digital Forensics and Incident Response — System analysis, memory forensics, and investigation workflows.
-Cryptography and Secure System Design — Applied crypto, implementation weaknesses, and protocol logic.
+This blog is my public notebook.
 
-# **What This Blog Contains**
+I use it to document research, publish CTF writeups, share tools I've built, record experiments, and write about problems that I find interesting. Everything here is written primarily for learning and reproducibility rather than content creation.
 
-This site is a technical archive of my work: CTF writeups, walkthroughs of structured security labs, experiments, prototypes, and research notes. Everything here is documented with reproducibility and clarity in mind, both for my own reference and for anyone else working in similar domains.
+I don't aim to post frequently. I aim to post things worth keeping.
 
-If you find something here useful, that’s a welcome side effect. The main goal is to maintain a public, accurate record of the problems I study and the solutions I build.
+Most articles are based on firsthand work: solving challenges, building projects, finding bugs, or exploring ideas. When I don't fully understand something, I keep digging until I do, then write about it.
 
-~ *CYB3R BO1*
+If these notes help someone else along the way, even better.
+
+Plus Ultra.
+
+**CYB3R BO1**

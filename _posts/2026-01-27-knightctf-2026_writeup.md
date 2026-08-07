@@ -1,8 +1,8 @@
 ---
 title: KnightCTF 2026 - Writeup
 date: 2026-01-27 23:50:00 +0530
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, networking, forensics, pwn, reverse-engineering]
+categories: [CTF]
+tags: [networking, forensics, pwn, reverse-engineering]
 description: A writeup for KnightCTF 2026 challenges.
 ---
 

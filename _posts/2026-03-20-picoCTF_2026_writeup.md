@@ -1,8 +1,8 @@
 ---
 title: picoCTF 2026 - Writeup
 date: 2026-03-19 21:30:00 +0530
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, reverse-engineering, pwn, cryptography, forensics, web, networking]
+categories: [CTF]
+tags: [reverse-engineering, pwn, cryptography, forensics, web, networking, picoctf]
 description: A writeup for picoCTF 2026 challenges.
 ---
 

@@ -1,12 +1,11 @@
 ---
 title: CloudSEK CTF 2026 Writeups
 date: 2026-07-13 10:30:00 +0530
-categories: [CTF, Web]
-tags: [ctf, web, ai, cloudsek, writeup]
+categories: [CTF]
+tags: [web, ai]
 description: Writeups for the challenges I solved during CloudSEK CTF 2026.
 ---
 
-# CloudSEK CTF 2026
 
 ![CloudSEK](/assets/img/posts/cloudsek-ctf-2026/banner.png)
 
@@ -23,15 +22,15 @@ This post contains writeups for the four challenges I managed to solve:
 
 ---
 
-# Echoes of Runtime (Web - 100)
+## Echoes of Runtime (Web - 100)
 
-## Challenge Information
+### Challenge Information
 
 ![EoR Challenge Information](/assets/img/posts/cloudsek-ctf-2026/EoR-Information.png)
 
 ---
 
-## Initial Recon
+### Initial Recon
 
 Opening the application didn't reveal much. It looked like a normal internal dashboard with a login page and a couple of links in the navigation bar.
 
@@ -73,7 +72,7 @@ Downloading the heap dump confirmed that the application was exposing its runtim
 
 ---
 
-## Digging Through the Heap
+### Digging Through the Heap
 
 I didn't bother loading it into a heap analysis tool initially. A quick strings search was enough to look for interesting keywords.
 
@@ -101,7 +100,7 @@ That looked much more promising than the fake credentials around it.
 
 ---
 
-## Pivoting into GitHub
+### Pivoting into GitHub
 
 Using the recovered PAT, I authenticated against GitHub.
 
@@ -128,7 +127,7 @@ url = https://gitlab.com/godfather-commits/internal-ops.git
 ![The private GitHub repository referencing a GitLab submodule.](/assets/img/posts/cloudsek-ctf-2026/EoR-GitLab.png)
 ---
 
-## The Final Piece
+### The Final Piece
 
 The referenced GitLab repository was publicly accessible.
 
@@ -144,7 +143,7 @@ FLAG=CSEK_CTF_2026{...}
 
 ---
 
-## Flag
+### Flag
 
 ```
 CSEK_CTF_2026{flag_h34pdump_l34k_p4t}
@@ -152,7 +151,7 @@ CSEK_CTF_2026{flag_h34pdump_l34k_p4t}
 
 ---
 
-## Summary
+### Summary
 
 This challenge was a nice reminder of how dangerous exposed Actuator endpoints can be.
 
@@ -184,14 +183,14 @@ Public .env file
 
 This was a fun introductory challenge. None of the individual steps were particularly difficult, but chaining them together made for a realistic attack path that mirrors mistakes seen in real production environments.
 
-# Internal Affairs - 1 (Web - 100)
+## Internal Affairs - 1 (Web - 100)
 
-## Challenge Information
+### Challenge Information
 
 ![IA1 Challenge Information](/assets/img/posts/cloudsek-ctf-2026/IA1-Information.png)
 ---
 
-## Initial Recon
+### Initial Recon
 
 The challenge provided the hostname `discover.lab`, so after adding the supplied hosts entry, I opened the website.
 
@@ -223,7 +222,7 @@ Opening it redirected me to the login page.
 
 ---
 
-## Finding the LFI
+### Finding the LFI
 
 One thing immediately caught my attention.
 
@@ -248,7 +247,7 @@ After decoding it, I found that the application simply included whatever was sup
 
 ---
 
-## Reading the Database
+### Reading the Database
 
 The next step was to inspect the login page source.
 
@@ -281,7 +280,7 @@ discovera1b2b3y4
 
 ---
 
-## Logging In
+### Logging In
 
 Using the recovered credentials, I logged into the CMS.
 
@@ -291,7 +290,7 @@ The dashboard loaded successfully and displayed the flag.
 
 ---
 
-## Flag
+### Flag
 
 ```
 CSEK_CTF_2026{flag_d0t_d0t_sl4sh_2_v1ct0ry}
@@ -299,7 +298,7 @@ CSEK_CTF_2026{flag_d0t_d0t_sl4sh_2_v1ct0ry}
 
 ---
 
-## Summary
+### Summary
 
 This challenge combined several common web vulnerabilities into a short attack chain.
 
@@ -337,14 +336,14 @@ Login to CMS
 
 I liked this challenge because it chained together multiple beginner-friendly techniques instead of relying on a single bug. None of the individual steps were particularly difficult, but each one naturally led to the next, making it a satisfying challenge to solve.
 
-# Internal Affairs - 2 (Web - 200)
+## Internal Affairs - 2 (Web - 200)
 
-## Challenge Information
+### Challenge Information
 
 ![IA2 Challenge Information](/assets/img/posts/cloudsek-ctf-2026/IA2-Information.png)
 ---
 
-## Initial Analysis
+### Initial Analysis
 
 After solving the first challenge, the second one unlocked automatically.
 
@@ -358,7 +357,7 @@ Image upload functionality is always worth investigating, so I decided to see ho
 
 ---
 
-## Looking Through the Source
+### Looking Through the Source
 
 During the previous challenge I had already confirmed that the application was vulnerable to Local File Inclusion, which meant I could read any PHP source file inside the web root.
 
@@ -378,7 +377,7 @@ That looked like the intended solution.
 
 ---
 
-## Building the Exploit
+### Building the Exploit
 
 The upload functionality only validated the file extension, so it was possible to upload a PHAR archive disguised as a `.jpg` image.
 
@@ -406,7 +405,7 @@ The application responded with the second flag.
 
 ---
 
-## Flag
+### Flag
 
 ```
 CSEK_CTF_2026{flag_ph4r_m3t4d4t4_und3s3r14l1z3d}
@@ -414,7 +413,7 @@ CSEK_CTF_2026{flag_ph4r_m3t4d4t4_und3s3r14l1z3d}
 
 ---
 
-## Summary
+### Summary
 
 This challenge built nicely on the first one.
 
@@ -449,15 +448,15 @@ Remote Code Execution
 
 I enjoyed this challenge because it demonstrated a lesser-known PHP behavior. File upload vulnerabilities are common, but combining them with the `phar://` stream wrapper and `getimagesize()` to achieve code execution is something you don't come across very often.
 
-# Total Recall (AI & ML - 250)
+## Total Recall (AI & ML - 250)
 
-## Challenge Information
+### Challenge Information
 
 ![TR Challenge Information](/assets/img/posts/cloudsek-ctf-2026/TR-Information.png)
 
 ---
 
-## Initial Recon
+### Initial Recon
 
 Opening the challenge URL immediately gave away an important clue.
 
@@ -477,7 +476,7 @@ At that point I stopped looking for traditional web bugs. It was pretty clear th
 
 ---
 
-## Exploring the Database
+### Exploring the Database
 
 The Qdrant instance was accessible without authentication, so I started enumerating the available collections.
 
@@ -523,7 +522,7 @@ At first glance it looked like the interesting data had already been deleted.
 
 ---
 
-## Using the FAQ Collection as a Reference
+### Using the FAQ Collection as a Reference
 
 The `faq_public` collection turned out to be the key.
 
@@ -535,7 +534,7 @@ Once I had the correct embedding model, recovering the hidden notes became much 
 
 ---
 
-## Recovering the Hidden Notes
+### Recovering the Hidden Notes
 
 At this point manually inspecting 500 vectors obviously wasn't practical, so I dumped the collection and started experimenting with embedding inversion using **vec2text**.
 
@@ -564,7 +563,7 @@ flag vec to text unrolls the vector.
 
 ---
 
-## Building the Flag
+### Building the Flag
 
 The challenge description explained how to transform the recovered phrase into the final flag:
 
@@ -585,7 +584,7 @@ Applying those rules produced the final flag.
 
 ---
 
-## Flag
+### Flag
 
 ```
 CSEK_CTF_2026{fl4g_v3c_t0_t3xt_unr0ll5_th3_v3ct0r}
@@ -593,7 +592,7 @@ CSEK_CTF_2026{fl4g_v3c_t0_t3xt_unr0ll5_th3_v3ct0r}
 
 ---
 
-## Summary
+### Summary
 
 This was easily my favorite challenge of the event because it explored a topic that doesn't appear very often in CTFs.
 

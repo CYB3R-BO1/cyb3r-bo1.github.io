@@ -1,12 +1,11 @@
 ---
 title: picoGym Forensics - Easy writeups
 date: 2025-05-08 11:00:00 +0530
-categories: [CTF, PicoCTF]
-tags: [ctf, writeups, cybersecurity, forensics, steganography]     # TAG names should always be lowercase
+categories: [CTF]
+tags: [forensics, steganography, picoctf]
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in PicoCTF practice.
 ---
 
-# **picoCTF**
 
 ![picoCTF](/assets/img/posts/picoGym-Forensics/picoCTF.jpg)
 

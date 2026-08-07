@@ -1,0 +1,38 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main{% if jekyll.environment == 'production' %}.bundle{% endif %}';
+
+/* append your custom style below */
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      --link-color: #10B981;
+      --checkbox-checked-color: #10B981;
+    }
+
+    &[data-mode='dark'] {
+      --link-color: #10B981;
+      --checkbox-checked-color: #10B981;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      --link-color: #10B981;
+      --checkbox-checked-color: #10B981;
+    }
+
+    &[data-mode='light'] {
+      --link-color: #10B981;
+      --checkbox-checked-color: #10B981;
+    }
+  }
+}
+
+#post-list .card-title {
+  font-weight: 700;
+}

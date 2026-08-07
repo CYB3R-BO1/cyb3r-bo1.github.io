@@ -1,12 +1,11 @@
 ---
 title: TsukuCTF 2025 writeups
 date: 2025-05-04 11:00:00 +0530
-categories: [CTF, Others]
-tags: [ctf, writeups, cybersecurity, osint, pwn, cryptography]     # TAG names should always be lowercase
+categories: [CTF]
+tags: [osint, pwn, cryptography]
 description: This post consists of writeups of the challenges CYB3R_BO1 had solved in TsukuCTF 2025.
 ---
 
-# **TsukuCTF 2025**
 
 ![tsukuCTF](/assets/img/posts/tsukuCTF2025/tsukuCTF.png)
 
@@ -20,7 +19,7 @@ This is a CTF with Japanese OSINT as the main genre. There are a few other genre
 - The duration of the event is 24h00m from 12:00(JST) on 05/03/2025 to 11:59(JST) on 05/04/2025.
 - Genres will include OSINT, Web, Pwn, Crypto, etc.
 - Maximum number of players per team is 4
-- The event was conducted online from Sat, 03 May 2025, 08:30 IST — Sun, 04 May 2025, 08:30 IST.
+- The event was conducted online from Sat, 03 May 2025, 08:30 IST to Sun, 04 May 2025, 08:30 IST.
 
 This is their CTF webpage - [https://tsukuctf.org/](https://tsukuctf.org/)
 
