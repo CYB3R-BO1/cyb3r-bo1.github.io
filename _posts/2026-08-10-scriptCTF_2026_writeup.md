@@ -6,6 +6,8 @@ tags: [ctf, writeups, cybersecurity, reverse-engineering, osint, web]
 description: A writeup for scriptCTF 2026 challenges.
 ---
 
+![scriptCTF](/assets/img/posts/scriptCTF-2026/scriptCTF.jpg)
+
 ## TL;DR
 
 * Participated in **scriptCTF 2026**, hosted by **ScriptSorcerers**
@@ -36,7 +38,7 @@ This post documents the challenges I solved.
 
 ### 404 Found
 
-**Description:** Please don't hack my shopping cart!
+![Challenge Info](/assets/img/posts/scriptCTF-2026/404-Found.png)
 
 #### Writeup
 
@@ -64,10 +66,7 @@ GET /the-best-robot  -> scriptCTF{r0b07s_4r3_t4k1ng_0v3r_e2ccd3fd696e}
 
 ### Diabolical
 
-**Description:** "scriptCTF does not have hard reversing challenges" - Armored Pawn, Let's see about that shall we?
-
-**Category:** rev
-**File:** `vault` (ELF 64-bit LSB executable, x86-64, statically linked, stripped, 3.1 MB)
+![Challenge Info](/assets/img/posts/scriptCTF-2026/Diabolical.png)
 
 #### Writeup
 
@@ -168,8 +167,9 @@ run), and check whether a check is even satisfiable before grinding on it.
 
 ### Midnight Snack
 
-**Description:** Can you find the address of this Taco Bell? Example: scriptCTF{1337_Orange_St}
-**Attachments:** tacobell.png
+![Challenge Info](/assets/img/posts/scriptCTF-2026/Midnight-Snack.png)
+
+![tacobell](/assets/img/posts/scriptCTF-2026/tacobell.jpg)
 
 #### Writeup
 
