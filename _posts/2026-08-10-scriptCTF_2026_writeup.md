@@ -11,7 +11,7 @@ description: A writeup for scriptCTF 2026 challenges.
 ## TL;DR
 
 * Participated in **scriptCTF 2026**, hosted by **ScriptSorcerers**
-* Team rank: **55 / 778**
+* Team rank: **54 / 1249**
 * Personally solved **1 web, 1 reverse and 1 osint** challenges
     * Web/404 Found
     * Reversing/Diabolical
@@ -205,5 +205,9 @@ I didn't get everything though, tried couple challenges made progress but couldn
 * **misc/flagchecker67** got close but at the end couldn't solve this and a couple others, just didn't get anywhere with these in time.
 
 After the CTF ended, the orgs dq'ed multiple team (a lot) as the rules say "ai ASSISTANCE was allowed, not ai-automated solving" then in the final scoreboard we stood at 55th position :yay:
+
+![scoreboard](/assets/img/posts/scriptCTF-2026/scoreboard.png)
+
+![Certificate of Participation](/assets/img/posts/scriptCTF-2026/certificate.png)
 
 Thanks for Reading. Plus Ultra. 🍀
