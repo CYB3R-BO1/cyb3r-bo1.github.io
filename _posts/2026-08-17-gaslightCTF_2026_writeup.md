@@ -1,10 +1,12 @@
 ---
 title: gaslightCTF 2026 - Writeup
-date: 2026-08-19 11:30:00 +0530
+date: 2026-08-21 17:30:00 +0530
 categories: [CTF, Others]
 tags: [ctf, writeups, cybersecurity, forensics, web, crypto, osint]
 description: A writeup for gaslightCTF 2026 challenges.
 ---
+
+![gaslightCTF](/assets/img/posts/gaslightCTF-2026/gaslight.png)
 
 ## TL;DR
 
@@ -529,5 +531,7 @@ $ python3 decrypt.py
 Great weekend, landing 17th out of 688 teams. NEWJEANS IS FIVE was the highlight for me. It looked like a plain AES-128-ECB black box at first, right up until diffing `chall.py` against real AES showed `SubBytes`/`SubWord` doing nothing at all. Once that clicked, it stopped being a crypto challenge and turned into a 128x128 linear algebra problem over GF(2), which was a fun "wait, that's actually it?" kind of solve. The OSINT set (odyssey, quack, meow, speedy) were easy for me, so I was able to move through those fairly quickly.
 
 It was a fun CTF, especially because using AI was against the rules, and several teams were caught and banned for automation. We stayed near the top of the leaderboard the whole time because we played by the rules, and the hard work of everyone on the team helped us reach this position. This was my personal second-best rank, and my first time finishing this high in an international CTF.
+
+
 
 Thanks for reading. Plus Ultra. 🍀
